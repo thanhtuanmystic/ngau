@@ -99,11 +99,11 @@ nav .navbar .links li a::after {
   width: 0%;
   content: ".";
   color: transparent;
-  background: var(--Base-Base-Black, #0A0A0B);
+  background: var(--Base-Base-Black, #0a0a0b);
   height: 1px;
 }
 nav .navbar .links li a:hover {
-  color: var(--Base-Base-Black, #0A0A0B);
+  color: var(--Base-Base-Black, #0a0a0b);
   font-weight: 600;
 }
 nav .navbar .links li a:hover::after {
@@ -307,6 +307,12 @@ nav .navbar .links li:hover .js-sub-menu {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
+}
+.ngau-title img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .ngau-sub-title {
@@ -425,6 +431,10 @@ nav .navbar .links li:hover .js-sub-menu {
 .homepage #exclusive_offer .col-right .ngau-title {
   margin-bottom: 10px;
 }
+.homepage #exclusive_offer .col-right .ngau-title img {
+  top: -3%;
+  right: -5%;
+}
 .homepage #exclusive_offer .col-right .ngau-btn {
   margin-top: auto;
 }
@@ -475,6 +485,9 @@ nav .navbar .links li:hover .js-sub-menu {
 .homepage #loose_gemstone .ngau-title-row {
   margin-bottom: 46px;
 }
+.homepage #loose_gemstone .ngau-title-row .ngau-title img {
+  right: -8%;
+}
 .homepage #loose_gemstone .ngau-title-row .ngau-title-row-right {
   width: 48%;
   display: flex;
@@ -516,15 +529,40 @@ nav .navbar .links li:hover .js-sub-menu {
   background: #fff9f2;
 }
 .homepage #jewellery_collection .jewellery-left {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
+.homepage #jewellery_collection .jewellery-left .jewellery-stonehide-1 {
+  position: absolute;
+  bottom: -26%;
+  left: -23%;
+  z-index: 1;
+}
 .homepage #jewellery_collection .jewellery-left .ngau-sub-title {
   margin-bottom: 40px;
+  z-index: 2;
+}
+.homepage #jewellery_collection .jewellery-left .ngau-btn {
+  z-index: 2;
 }
 .homepage #jewellery_collection .jewellery-left .ngau-title {
   line-height: 100px;
+  z-index: 2;
+}
+.homepage #jewellery_collection .jewellery-left .ngau-title img {
+  top: -7%;
+  right: 38%;
+}
+.homepage #jewellery_collection .jewellery-slider-box {
+  position: relative;
+}
+.homepage #jewellery_collection .jewellery-slider-box .jewellery-stonehide-2 {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
 }
 .homepage #jewellery_collection .jewellery-slider-box .swiper-pagination-bullet {
   border: 1px solid #1da1f2;
@@ -975,6 +1013,16 @@ nav .navbar .links li:hover .js-sub-menu {
   padding: 80px 0;
   background: #fff9f2;
 }
+.homepage #expert_craftspeople .expert_craftspeople-content {
+  position: relative;
+}
+.homepage #expert_craftspeople .expert_craftspeople-content .expert-stonehide {
+  position: absolute;
+  width: 22%;
+  left: -7%;
+  bottom: -15%;
+  z-index: 1;
+}
 .homepage #expert_craftspeople .expert_craftspeople-content .expert-left {
   padding: 20px 20px 30px 40px;
   background: #fff;
@@ -983,9 +1031,15 @@ nav .navbar .links li:hover .js-sub-menu {
   flex-direction: column;
   justify-content: center;
   border-radius: 20px;
+  position: relative;
+  z-index: 2;
 }
 .homepage #expert_craftspeople .expert_craftspeople-content .ngau-title {
   line-height: 100px;
+}
+.homepage #expert_craftspeople .expert_craftspeople-content .ngau-title img {
+  top: -6%;
+  right: 46%;
 }
 .homepage #expert_craftspeople .expert_craftspeople-content .ngau-sub-title {
   margin: 25px 0 50px 0;
@@ -1005,6 +1059,9 @@ nav .navbar .links li:hover .js-sub-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.homepage #asian_fengshui_decoration .center-column .ngau-title img {
+  right: auto;
 }
 .homepage #asian_fengshui_decoration .ngau-btn {
   padding: 10px 0;
@@ -1053,6 +1110,9 @@ nav .navbar .links li:hover .js-sub-menu {
 .homepage #gemstone_stories {
   background: #fff9f2;
   padding-bottom: 80px;
+}
+.homepage #gemstone_stories .ngau-title img {
+  right: auto;
 }
 .homepage #gemstone_stories .container {
   display: flex;
@@ -1371,6 +1431,9 @@ nav .navbar .links li:hover .js-sub-menu {
   .homepage #expert_craftspeople .expert_craftspeople-content .ngau-sub-title {
     margin: 0 0 10px 0;
   }
+  .ngau-title img {
+    display: none;
+  }
 }
 @media screen and (max-width: 990px) {
   .homepage #hero .saleoff-header {
@@ -1445,6 +1508,11 @@ nav .navbar .links li:hover .js-sub-menu {
   }
   .homepage #testimoninals .testimoninals-box .testimoninals_slide .testimoninals-each {
     padding: 36px 25px 50px 25px;
+  }
+  .homepage #expert_craftspeople .expert_craftspeople-content .expert-stonehide {
+    width: 30%;
+    top: 28%;
+    left: -13%;
   }
 }
 @media screen and (max-width: 767px) {

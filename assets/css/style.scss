@@ -458,14 +458,39 @@ body {
           left: 0;
           width: 100%;
           display: flex;
-          align-items: center;
-          justify-content: space-around;
-          .product-name {
-            color: var(--Neutrals-Neutrals800, #433e3f);
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
+          flex-direction: column;
+          .product-info-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 25px;
+            .product-name {
+              color: var(--Neutrals-Neutrals800, #433e3f);
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
+          }
+          .product-info-price {
+            display: flex;
+            gap: 10px;
+            padding: 0 25px;
+            .old-price {
+              color: var(--Neutrals-Neutrals400, #9f9c9c);
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              text-decoration: line-through;
+            }
+            .current-price {
+              color: var(--Neutrals-Neutrals900, #2b2829);
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
           }
         }
       }
@@ -606,17 +631,41 @@ body {
           left: 0;
           width: 100%;
           display: flex;
-          align-items: center;
-          justify-content: space-around;
-          .product-name {
-            color: var(--Neutrals-Neutrals800, #433e3f);
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
+          flex-direction: column;
+          .product-info-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 25px;
+            .product-name {
+              color: var(--Neutrals-Neutrals800, #433e3f);
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
+          }
+          .product-info-price {
+            display: flex;
+            gap: 10px;
+            padding: 0 25px;
+            .old-price {
+              color: var(--Neutrals-Neutrals400, #9f9c9c);
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              text-decoration: line-through;
+            }
+            .current-price {
+              color: var(--Neutrals-Neutrals900, #2b2829);
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
           }
         }
-        
       }
 
       .slide-wrap .inner a {
@@ -688,7 +737,7 @@ body {
         top: 20%;
         z-index: 10;
         cursor: pointer;
-        font-size: 50px;
+        font-size: 40px;
         line-height: 48px;
         text-align: center;
         font-style: normal;
@@ -776,14 +825,39 @@ body {
           left: 0;
           width: 100%;
           display: flex;
-          align-items: center;
-          justify-content: space-around;
-          .product-name {
-            color: var(--Neutrals-Neutrals800, #433e3f);
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
+          flex-direction: column;
+          .product-info-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 25px;
+            .product-name {
+              color: var(--Neutrals-Neutrals800, #433e3f);
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
+          }
+          .product-info-price {
+            display: flex;
+            gap: 10px;
+            padding: 0 25px;
+            .old-price {
+              color: var(--Neutrals-Neutrals400, #9f9c9c);
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              text-decoration: line-through;
+            }
+            .current-price {
+              color: var(--Neutrals-Neutrals900, #2b2829);
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
           }
         }
       }
@@ -1071,6 +1145,45 @@ body {
 
 // Responsive
 @media screen and (min-width: 1600px) {
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
+    width: 700px;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
+    .pos1 {
+      left: 5%;
+    }
+    .pos2 {
+      left: 18%;
+    }
+    .pos3 {
+    }
+    .pos4 {
+      right: 4%;
+    }
+    .pos5 {
+      right: -10%;
+    }
+  }
+  .homepage #jewellery_collection .jewellery-slider-box {
+    .prev {
+      left: 5% !important;
+    }
+    .next {
+      right: -10% !important;
+    }
+  }
+  .homepage #loose_gemstone .swiper-container {
+    height: 480px;
+  }
+  .homepage #asian_fengshui_decoration .swiper-container {
+    height: 480px;
+  }
+  .homepage #exclusive_offer .col-right .ngau-title img {
+    right: 26%;
+  }
+  .homepage #expert_craftspeople .expert_craftspeople-content .ngau-title img {
+    right: 62%;
+  }
 }
 
 @media screen and (max-width: 1400px) {

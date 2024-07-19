@@ -470,14 +470,39 @@ nav .navbar .links li:hover .js-sub-menu {
   left: 0;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
 }
-.homepage #loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-name {
+.homepage #loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+.homepage #loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-row .product-name {
   color: var(--Neutrals-Neutrals800, #433e3f);
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
+  line-height: normal;
+}
+.homepage #loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-price {
+  display: flex;
+  gap: 10px;
+  padding: 0 25px;
+}
+.homepage #loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-price .old-price {
+  color: var(--Neutrals-Neutrals400, #9f9c9c);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: line-through;
+}
+.homepage #loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-price .current-price {
+  color: var(--Neutrals-Neutrals900, #2b2829);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
 }
 .homepage #loose_gemstone .loose_gemstone-slider .arrow-next-lg,
@@ -610,14 +635,39 @@ nav .navbar .links li:hover .js-sub-menu {
   left: 0;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
 }
-.homepage #jewellery_collection .jewellery-slider-box .slide-wrap .inner .product-info .product-name {
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap .inner .product-info .product-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap .inner .product-info .product-info-row .product-name {
   color: var(--Neutrals-Neutrals800, #433e3f);
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
+  line-height: normal;
+}
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap .inner .product-info .product-info-price {
+  display: flex;
+  gap: 10px;
+  padding: 0 25px;
+}
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap .inner .product-info .product-info-price .old-price {
+  color: var(--Neutrals-Neutrals400, #9f9c9c);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: line-through;
+}
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap .inner .product-info .product-info-price .current-price {
+  color: var(--Neutrals-Neutrals900, #2b2829);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
 }
 .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .inner a {
@@ -681,7 +731,7 @@ nav .navbar .links li:hover .js-sub-menu {
   top: 20%;
   z-index: 10;
   cursor: pointer;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 48px;
   text-align: center;
   font-style: normal;
@@ -768,14 +818,39 @@ nav .navbar .links li:hover .js-sub-menu {
   left: 0;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
 }
-.homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box .product-info .product-name {
+.homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box .product-info .product-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+.homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box .product-info .product-info-row .product-name {
   color: var(--Neutrals-Neutrals800, #433e3f);
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
+  line-height: normal;
+}
+.homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box .product-info .product-info-price {
+  display: flex;
+  gap: 10px;
+  padding: 0 25px;
+}
+.homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box .product-info .product-info-price .old-price {
+  color: var(--Neutrals-Neutrals400, #9f9c9c);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: line-through;
+}
+.homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box .product-info .product-info-price .current-price {
+  color: var(--Neutrals-Neutrals900, #2b2829);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
 }
 .homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .arrow-next-afd,
@@ -1046,6 +1121,41 @@ nav .navbar .links li:hover .js-sub-menu {
   user-select: text !important;
 }
 
+@media screen and (min-width: 1600px) {
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
+    width: 700px;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos1 {
+    left: 5%;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos2 {
+    left: 18%;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos4 {
+    right: 4%;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos5 {
+    right: -10%;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .prev {
+    left: 5% !important;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .next {
+    right: -10% !important;
+  }
+  .homepage #loose_gemstone .swiper-container {
+    height: 480px;
+  }
+  .homepage #asian_fengshui_decoration .swiper-container {
+    height: 480px;
+  }
+  .homepage #exclusive_offer .col-right .ngau-title img {
+    right: 26%;
+  }
+  .homepage #expert_craftspeople .expert_craftspeople-content .ngau-title img {
+    right: 62%;
+  }
+}
 @media screen and (max-width: 1400px) {
   body {
     padding-top: 90px;

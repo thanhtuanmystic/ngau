@@ -337,6 +337,9 @@ nav .navbar .links li:hover .js-sub-menu {
   font-weight: 400;
   line-height: normal;
 }
+.ngau-btn:hover {
+  opacity: 0.8;
+}
 
 .ngau-title-row {
   display: flex;
@@ -394,6 +397,9 @@ nav .navbar .links li:hover .js-sub-menu {
   color: var(--Neutrals-Base-White, #fafafa);
   font-size: 20px;
   font-weight: 400;
+}
+.homepage #hero .header-btn:hover {
+  opacity: 0.8;
 }
 .homepage #exclusive_offer {
   padding: 80px 0;
@@ -1046,7 +1052,7 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 .homepage #expert_craftspeople .expert_craftspeople-content .ngau-btn {
   padding: 10px 0;
-  width: 32%;
+  width: 45%;
 }
 .homepage #asian_fengshui_decoration {
   padding: 0 0 5rem 0;
@@ -1358,6 +1364,10 @@ nav .navbar .links li:hover .js-sub-menu {
   user-select: text !important; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
+.swiper-slide * {
+  user-select: text !important;
+}
+
 @media screen and (max-width: 1400px) {
   body {
     padding-top: 90px;
@@ -1416,6 +1426,22 @@ nav .navbar .links li:hover .js-sub-menu {
   }
   .homepage #testimoninals {
     padding: 0 0 50px 0;
+  }
+  .homepage #exclusive_offer .col-right .ngau-title img {
+    top: -40%;
+    right: -2%;
+  }
+  .homepage #loose_gemstone .ngau-title-row .ngau-title img {
+    top: -40%;
+    right: -20%;
+  }
+  .homepage #jewellery_collection .jewellery-left .ngau-title img,
+  .homepage #expert_craftspeople .expert_craftspeople-content .ngau-title img {
+    right: auto;
+  }
+  .homepage #asian_fengshui_decoration .center-column .ngau-title img,
+  .homepage #gemstone_stories .ngau-title img {
+    top: -40%;
   }
 }
 @media screen and (max-width: 1200px) {

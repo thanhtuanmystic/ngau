@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   initializeSwiper(
+    
     ".mySwiper",
     {
       spaceBetween: 10,

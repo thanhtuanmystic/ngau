@@ -77,13 +77,6 @@ nav .navbar .links li {
   list-style: none;
   padding: 0 14px;
 }
-nav .navbar .links li:hover {
-  border-bottom: 1px solid #0a0a0b;
-}
-nav .navbar .links li:hover a {
-  color: var(--Base-Base-Black, #0a0a0b);
-  font-weight: bold;
-}
 
 nav .navbar .links li a {
   height: 100%;
@@ -92,6 +85,29 @@ nav .navbar .links li a {
   color: var(--Neutrals-Neutrals700, #5a5555);
   font-size: 16px;
   font-weight: 300;
+  position: relative;
+}
+nav .navbar .links li a::before, nav .navbar .links li a::after {
+  transition: all 0.5s;
+}
+nav .navbar .links li a::after {
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: var(--Base-Base-Black, #0A0A0B);
+  height: 1px;
+}
+nav .navbar .links li a:hover {
+  color: var(--Base-Base-Black, #0A0A0B);
+  font-weight: 600;
+}
+nav .navbar .links li a:hover::after {
+  width: 100%;
 }
 
 .links li:hover .htmlcss-arrow,

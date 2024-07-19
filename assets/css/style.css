@@ -569,6 +569,9 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 .homepage #jewellery_collection .jewellery-slider-box {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .homepage #jewellery_collection .jewellery-slider-box .jewellery-stonehide-2 {
   position: absolute;

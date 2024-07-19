@@ -562,6 +562,9 @@ body {
 
     .jewellery-slider-box {
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       .jewellery-stonehide-2 {
         position: absolute;
         bottom: -10%;

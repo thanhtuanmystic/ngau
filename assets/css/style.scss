@@ -27,6 +27,10 @@ img {
 .overflow-hiden {
   overflow: hidden;
 }
+.container-fluid {
+  padding-left: 70px;
+  padding-right: 70px;
+}
 nav {
   position: fixed;
   top: 0;
@@ -427,8 +431,8 @@ body {
       .ngau-title {
         margin-bottom: 10px;
         img {
-          top: -3%;
-          right: -5%;
+          top: 0;
+          right: 10%;
         }
       }
       .ngau-btn {
@@ -547,8 +551,8 @@ body {
         line-height: 100px;
         z-index: 2;
         img {
-          top: -7%;
-          right: 38%;
+          top: -10%;
+          right: -6%;
         }
       }
       display: flex;
@@ -1169,8 +1173,8 @@ body {
       .ngau-title {
         line-height: 100px;
         img {
-          top: -6%;
-          right: 46%;
+          top: -13%;
+          right: 55%;
         }
       }
       .ngau-sub-title {

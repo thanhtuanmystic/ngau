@@ -29,6 +29,11 @@ img {
   overflow: hidden;
 }
 
+.container-fluid {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -438,8 +443,8 @@ nav .navbar .links li:hover .js-sub-menu {
   margin-bottom: 10px;
 }
 .homepage #exclusive_offer .col-right .ngau-title img {
-  top: -3%;
-  right: -5%;
+  top: 0;
+  right: 10%;
 }
 .homepage #exclusive_offer .col-right .ngau-btn {
   margin-top: auto;
@@ -559,8 +564,8 @@ nav .navbar .links li:hover .js-sub-menu {
   z-index: 2;
 }
 .homepage #jewellery_collection .jewellery-left .ngau-title img {
-  top: -7%;
-  right: 38%;
+  top: -10%;
+  right: -6%;
 }
 .homepage #jewellery_collection .jewellery-slider-box {
   position: relative;
@@ -1044,8 +1049,8 @@ nav .navbar .links li:hover .js-sub-menu {
   line-height: 100px;
 }
 .homepage #expert_craftspeople .expert_craftspeople-content .ngau-title img {
-  top: -6%;
-  right: 46%;
+  top: -13%;
+  right: 55%;
 }
 .homepage #expert_craftspeople .expert_craftspeople-content .ngau-sub-title {
   margin: 25px 0 50px 0;

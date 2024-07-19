@@ -1120,7 +1120,7 @@ nav .navbar .links li:hover .js-sub-menu {
 .homepage #gemstone_stories .ngau-title img {
   right: auto;
 }
-.homepage #gemstone_stories .container {
+.homepage #gemstone_stories .containe-fluid {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1182,7 +1182,7 @@ nav .navbar .links li:hover .js-sub-menu {
 .homepage #service {
   background: #fff9f2;
 }
-.homepage #service .container {
+.homepage #service .container-fluid {
   border-top: 1px solid;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -1420,7 +1420,7 @@ nav .navbar .links li:hover .js-sub-menu {
   .homepage #gemstone_stories {
     padding-bottom: 50px;
   }
-  .homepage #service .container {
+  .homepage #service .container-fluid {
     padding-top: 50px;
     padding-bottom: 50px;
   }

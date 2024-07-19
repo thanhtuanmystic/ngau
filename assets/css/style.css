@@ -575,395 +575,33 @@ nav .navbar .links li:hover .js-sub-menu {
   bottom: -10%;
   left: 0;
 }
-.homepage #jewellery_collection .jewellery-slider-box .swiper-pagination-bullet {
-  border: 1px solid #1da1f2;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-pagination-bullet-active {
-  background: #1da1f2;
-}
-.homepage #jewellery_collection .jewellery-slider-box img:not([draggable]),
-.homepage #jewellery_collection .jewellery-slider-box embed,
-.homepage #jewellery_collection .jewellery-slider-box object,
-.homepage #jewellery_collection .jewellery-slider-box video {
-  max-width: 100%;
-  height: auto;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-no-flexbox .swiper-slide {
-  float: left;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-vertical > .swiper-wrapper {
-  -webkit-box-orient: vertical;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.homepage #jewellery_collection .jewellery-slider-box .wrapper {
   display: flex;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  box-sizing: content-box;
 }
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-android .swiper-slide,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-wrapper {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+.homepage #jewellery_collection .jewellery-slider-box .demo-wrap {
+  position: relative;
 }
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-multirow > .swiper-wrapper {
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
+  max-width: 100%;
 }
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-free-mode > .swiper-wrapper {
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
+  width: 500px;
+  height: 450px;
   margin: 0 auto;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-slide {
-  -webkit-flex-shrink: 0;
-  -ms-flex: 0 0 auto;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: 100%;
-  height: 100%;
   position: relative;
+  /* overflow: hidden; */
 }
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-autoheight,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-autoheight .swiper-slide {
-  height: auto;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-autoheight .swiper-wrapper {
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-transition-property: -webkit-transform, height;
-  -webkit-transition-property: height, -webkit-transform;
-  transition-property: height, -webkit-transform;
-  transition-property: transform, height;
-  transition-property: transform, height, -webkit-transform;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container .swiper-notification {
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap li {
+  display: none;
+  width: 300px;
   position: absolute;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-  opacity: 0;
-  z-index: -1000;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-wp8-horizontal {
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-wp8-vertical {
-  -ms-touch-action: pan-x;
-  touch-action: pan-x;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-button-next,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-button-prev {
-  position: absolute;
-  top: 50%;
-  width: 27px;
-  height: 44px;
-  margin-top: -22px;
-  z-index: 10;
-  cursor: pointer;
-  background-size: 27px 44px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-button-next.swiper-button-disabled,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-button-prev.swiper-button-disabled {
-  opacity: 0.35;
-  cursor: auto;
-  pointer-events: none;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-button-prev,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-rtl .swiper-button-next {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
-  left: 10px;
-  right: auto;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-button-prev.swiper-button-black,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-rtl .swiper-button-next.swiper-button-black {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-button-prev.swiper-button-white,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-rtl .swiper-button-next.swiper-button-white {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-button-next,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-rtl .swiper-button-prev {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
-  right: 10px;
-  left: auto;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-button-next.swiper-button-black,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-rtl .swiper-button-prev.swiper-button-black {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-button-next.swiper-button-white,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-rtl .swiper-button-prev.swiper-button-white {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-3d {
-  -webkit-perspective: 1200px;
-  -o-perspective: 1200px;
-  perspective: 1200px;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-3d .swiper-cube-shadow,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-3d .swiper-slide,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-3d .swiper-slide-shadow-bottom,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-3d .swiper-slide-shadow-left,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-3d .swiper-slide-shadow-right,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-3d .swiper-slide-shadow-top,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-3d .swiper-wrapper {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-3d .swiper-slide-shadow-bottom,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-3d .swiper-slide-shadow-left,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-3d .swiper-slide-shadow-right,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-3d .swiper-slide-shadow-top {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 10;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-3d .swiper-slide-shadow-left {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-3d .swiper-slide-shadow-right {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-3d .swiper-slide-shadow-top {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-3d .swiper-slide-shadow-bottom {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-coverflow .swiper-wrapper,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-flip .swiper-wrapper {
-  -ms-perspective: 1200px;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-cube,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-flip {
-  overflow: visible;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-cube .swiper-slide,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-flip .swiper-slide {
-  pointer-events: none;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  z-index: 1;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-cube .swiper-slide .swiper-slide,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-flip .swiper-slide .swiper-slide {
-  pointer-events: none;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-cube .swiper-slide-active,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-cube .swiper-slide-active .swiper-slide-active,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-flip .swiper-slide-active,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-flip .swiper-slide-active .swiper-slide-active {
-  pointer-events: auto;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-cube .swiper-slide-shadow-bottom,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-cube .swiper-slide-shadow-left,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-cube .swiper-slide-shadow-right,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-cube .swiper-slide-shadow-top,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-flip .swiper-slide-shadow-bottom,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-flip .swiper-slide-shadow-left,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-flip .swiper-slide-shadow-right,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-flip .swiper-slide-shadow-top {
   z-index: 0;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  overflow: hidden;
 }
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-cube .swiper-slide {
-  visibility: hidden;
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
-  width: 100%;
-  height: 100%;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-cube.swiper-container-rtl .swiper-slide {
-  -webkit-transform-origin: 100% 0;
-  transform-origin: 100% 0;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-cube .swiper-slide-active,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-cube .swiper-slide-next,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-cube .swiper-slide-next + .swiper-slide,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-cube .swiper-slide-prev {
-  pointer-events: auto;
-  visibility: visible;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-cube .swiper-cube-shadow {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: 0.6;
-  -webkit-filter: blur(50px);
-  filter: blur(50px);
-  z-index: 0;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-fade.swiper-container-free-mode .swiper-slide {
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-fade .swiper-slide {
-  pointer-events: none;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-fade .swiper-slide .swiper-slide {
-  pointer-events: none;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-fade .swiper-slide-active,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-fade .swiper-slide-active .swiper-slide-active {
-  pointer-events: auto;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-zoom-container {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-zoom-container > canvas,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-zoom-container > img,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-zoom-container > svg {
-  max-width: 100%;
-  max-height: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-scrollbar {
-  border-radius: 10px;
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap .inner {
   position: relative;
-  -ms-touch-action: none;
-  background: rgba(0, 0, 0, 0.1);
 }
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-horizontal > .swiper-scrollbar {
-  position: absolute;
-  left: 1%;
-  bottom: 3px;
-  z-index: 50;
-  height: 5px;
-  width: 98%;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-vertical > .swiper-scrollbar {
-  position: absolute;
-  right: 3px;
-  top: 1%;
-  z-index: 50;
-  width: 5px;
-  height: 98%;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-scrollbar-drag {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  left: 0;
-  top: 0;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-scrollbar-cursor-drag {
-  cursor: move;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-lazy-preloader {
-  width: 42px;
-  height: 42px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -21px;
-  margin-top: -21px;
-  z-index: 10;
-  -webkit-transform-origin: 50%;
-  transform-origin: 50%;
-  -webkit-animation: swiper-preloader-spin 1s steps(12, end) infinite;
-  animation: swiper-preloader-spin 1s steps(12, end) infinite;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-lazy-preloader:after {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%236c6c6c'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-  background-position: 50%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-lazy-preloader-white:after {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%23fff'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-}
-@-webkit-keyframes swiper-preloader-spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes swiper-preloader-spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container.one {
-  padding-top: 40px;
-  text-align: center;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container.one .swiper-slide {
-  padding: 0 43px;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container {
-  width: 100%;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-slide img {
-  display: block;
-  margin: auto;
-  width: 100%;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-slide {
-  width: 390px;
-  height: auto;
-  padding: 0 15px;
-}
-.homepage #jewellery_collection .jewellery-slider-box .swiper-slide .product-info {
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap .inner .product-info {
   position: absolute;
   bottom: 5%;
   left: 0;
@@ -972,53 +610,85 @@ nav .navbar .links li:hover .js-sub-menu {
   align-items: center;
   justify-content: space-around;
 }
-.homepage #jewellery_collection .jewellery-slider-box .swiper-slide .product-info .product-name {
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap .inner .product-info .product-name {
   color: var(--Neutrals-Neutrals800, #433e3f);
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
-.homepage #jewellery_collection .jewellery-slider-box .swiper-slide img {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap .inner a {
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
-.homepage #jewellery_collection .jewellery-slider-box .swiper-slide .slider-image .preview-icon {
-  z-index: -1;
-  width: calc(100% - 30px);
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap img {
+  width: 100%;
+  border: none;
+  outline: none;
 }
-.homepage #jewellery_collection .jewellery-slider-box .swiper-slide.swiper-slide-active .slider-image:hover .preview-icon {
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos1 {
+  display: block;
+  width: 200px;
+  height: 236px;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
-.homepage #jewellery_collection .jewellery-slider-box .swiper-paginationn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos2 {
+  display: block;
+  width: 220px;
+  height: 286px;
+  top: 35px;
+  left: 14%;
+  z-index: 2;
 }
-.homepage #jewellery_collection .jewellery-slider-box .swiper-container-horizontal > .swiper-pagination-bullets,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-pagination-custom,
-.homepage #jewellery_collection .jewellery-slider-box .swiper-pagination-fraction {
-  bottom: 0;
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos3 {
+  display: block;
+  width: 300px;
+  height: 390px;
+  top: 15%;
+  left: 35%;
+  z-index: 3;
 }
-.homepage #jewellery_collection .jewellery-slider-box .swiper-pagination-bullet {
-  background: transparent none repeat scroll 0 0;
-  border: 1px solid #a7cce7;
-  border-radius: 10px;
-  display: inline-block;
-  height: 10px;
-  opacity: 1;
-  width: 26px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos4 {
+  display: block;
+  width: 220px;
+  height: 286px;
+  top: 35px;
+  right: -14%;
+  z-index: 2;
 }
-.homepage #jewellery_collection .jewellery-slider-box .swiper-pagination-bullet-active {
-  background: var(--Gradient-3, linear-gradient(265deg, #c9fffd -1.27%, #c0e6ff 55.44%, #e484b6 112.15%));
-  border: medium none;
-  height: 12px;
-  opacity: 1;
-  width: 12px;
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos5 {
+  display: block;
+  width: 200px;
+  height: 236px;
+  top: 0;
+  right: -25%;
+  z-index: 1;
+}
+.homepage #jewellery_collection .jewellery-slider-box .slide-wrap .inner {
+  overflow: hidden;
+  position: relative;
+}
+.homepage #jewellery_collection .jewellery-slider-box .arrow {
+  border-radius: 50%;
+  color: #454545;
+  position: absolute;
+  top: 20%;
+  z-index: 10;
+  cursor: pointer;
+  font-size: 50px;
+  line-height: 48px;
+  text-align: center;
+  font-style: normal;
+  opacity: 0.7;
+}
+.homepage #jewellery_collection .jewellery-slider-box .prev {
+  left: -1% !important;
+}
+.homepage #jewellery_collection .jewellery-slider-box .next {
+  right: -26% !important;
 }
 .homepage #expert_craftspeople {
   padding: 80px 0;

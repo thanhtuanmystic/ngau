@@ -28,8 +28,9 @@ img {
   overflow: hidden;
 }
 .container-fluid {
-  padding-left: 70px;
-  padding-right: 70px;
+  // padding-left: 70px;
+  // padding-right: 70px;
+  max-width: 1780px;
 }
 nav {
   position: fixed;
@@ -304,6 +305,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
+  display: inline;
   img {
     position: absolute;
     top: 0;
@@ -403,6 +405,54 @@ body {
     background: #fff9f2;
     .col-left {
       position: relative;
+      .swiper-slide {
+        position: relative;
+        .product-info {
+          position: absolute;
+          bottom: 2%;
+          left: 4%;
+          .product-name {
+            color: var(--Base-Base-White, #fafafa);
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+          .product-price {
+            color: var(--Base-Base-White, #fafafa);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        .sale-percent {
+          position: absolute;
+          top: 2%;
+          left: 4%;
+          display: inline-flex;
+          padding: 4px 18px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 2px;
+          background: var(
+            --Gradient-3,
+            linear-gradient(
+              321deg,
+              #8fd3d1 3.41%,
+              #83c0e9 25.4%,
+              #a182bc 47.38%,
+              #e484b6 69.37%,
+              #fac2a1 91.36%
+            )
+          );
+          color: var(--Backgrounds-Primary, #fff);
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
       .arrow-prev,
       .arrow-next {
         position: absolute;
@@ -430,9 +480,10 @@ body {
       justify-content: space-between;
       .ngau-title {
         margin-bottom: 10px;
+        line-height: 100px;
         img {
           top: 0;
-          right: 10%;
+          right: -110%;
         }
       }
       .ngau-btn {
@@ -450,6 +501,7 @@ body {
     .loose_gemstone-slider {
       position: relative;
       overflow: hidden;
+      padding-right: 0;
       .loose-gemstone-box {
         position: relative;
         .product-info {
@@ -512,7 +564,7 @@ body {
       margin-bottom: 46px;
       .ngau-title {
         img {
-          right: -8%;
+          right: -10%;
         }
       }
       .ngau-title-row-right {
@@ -817,6 +869,7 @@ body {
       overflow: hidden;
       margin-top: 40px;
       position: relative;
+      padding-right: 0;
       .fengshui-box {
         position: relative;
         .product-info {
@@ -884,7 +937,7 @@ body {
         right: auto;
       }
     }
-    .containe-fluid {
+    .container-fluid {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -979,9 +1032,11 @@ body {
       border: 2px solid #d6d6d6;
       padding: 30px 80px 60px 80px;
       position: relative;
+      overflow: hidden;
       .ngau-title {
         color: #000;
         -webkit-text-fill-color: #000;
+        display: block;
       }
       .swiper-container {
         height: auto;
@@ -993,7 +1048,7 @@ body {
         margin-bottom: 40px;
       }
       .testimoninals_slide {
-        overflow: hidden;
+        // overflow: hidden;
         .fb-beauty-top,
         .fb-beauty-bottom {
           position: absolute;
@@ -1172,20 +1227,26 @@ body {
       right: -10% !important;
     }
   }
+
+  .homepage #asian_fengshui_decoration .swiper-container,
   .homepage #loose_gemstone .swiper-container {
-    height: 480px;
+    height: 470px;
   }
-  .homepage #asian_fengshui_decoration .swiper-container {
-    height: 480px;
-  }
-  .homepage #exclusive_offer .col-right .ngau-title img {
-    right: 26%;
-  }
+
   .homepage #expert_craftspeople .expert_craftspeople-content .ngau-title img {
-    right: 62%;
+    right: 60%;
   }
 }
+@media screen and (max-width: 1600px) {
+  .container-fluid {
+    max-width: 1460px;
+  }
 
+  .homepage #asian_fengshui_decoration .swiper-container,
+  .homepage #loose_gemstone .swiper-container {
+    height: 390px;
+  }
+}
 @media screen and (max-width: 1400px) {
   body {
     padding-top: 90px;
@@ -1206,9 +1267,7 @@ body {
   .ngau-title-row {
     align-items: flex-start;
   }
-  .homepage #loose_gemstone .swiper-container {
-    height: 340px;
-  }
+
   .homepage #loose_gemstone {
     padding-bottom: 50px;
   }
@@ -1222,8 +1281,9 @@ body {
   .homepage #asian_fengshui_decoration .ngau-sub-title {
     margin: 10px 0 20px 0;
   }
-  .homepage #asian_fengshui_decoration .swiper-container {
-    height: 340px;
+  .homepage #asian_fengshui_decoration .swiper-container,
+  .homepage #loose_gemstone .swiper-container {
+    height: 370px;
   }
   .homepage
     #gemstone_stories
@@ -1246,13 +1306,21 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .homepage #expert_craftspeople .expert_craftspeople-content .ngau-title {
+    .seperate {
+      display: none;
+    }
+  }
+  .homepage #jewellery_collection .jewellery-left .ngau-title {
+    line-height: normal;
+    .seperate {
+      display: none;
+    }
+  }
   .homepage #testimoninals {
     padding: 0 0 50px 0;
   }
-  .homepage #exclusive_offer .col-right .ngau-title img {
-    top: -40%;
-    right: -2%;
-  }
+
   .homepage #loose_gemstone .ngau-title-row .ngau-title img {
     top: -40%;
     right: -20%;
@@ -1265,6 +1333,41 @@ body {
   .homepage #asian_fengshui_decoration .center-column .ngau-title img,
   .homepage #gemstone_stories .ngau-title img {
     top: -40%;
+  }
+
+  .homepage #jewellery_collection .jewellery-slider-box {
+    justify-content: normal;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
+    width: 400px;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
+    .pos1 {
+      // left: 5%;
+    }
+    .pos2 {
+      // left: 18%;
+    }
+    .pos3 {
+    }
+    .pos4 {
+      right: -30%;
+    }
+    .pos5 {
+      right: -46%;
+    }
+  }
+  .homepage #jewellery_collection .jewellery-slider-box {
+    .prev {
+      left: 0 !important;
+    }
+    .next {
+      right: -46% !important;
+    }
+  }
+  .homepage #exclusive_offer .col-right .ngau-title img {
+    top: -52%;
+    right: -24%;
   }
 }
 
@@ -1281,8 +1384,47 @@ body {
   .homepage #expert_craftspeople .expert_craftspeople-content .ngau-sub-title {
     margin: 0 0 10px 0;
   }
+
   .ngau-title img {
     display: none;
+  }
+  .homepage #jewellery_collection .jewellery-left {
+    width: 100%;
+  }
+
+  .homepage #jewellery_collection .jewellery-slider-box {
+    justify-content: center;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
+    width: 700px;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
+    .pos1 {
+      // left: 5%;
+    }
+    .pos2 {
+      // left: 18%;
+    }
+    .pos3 {
+    }
+    .pos4 {
+      right: 0%;
+    }
+    .pos5 {
+      right: -13%;
+    }
+  }
+  .homepage #jewellery_collection .jewellery-slider-box {
+    .prev {
+      left: 0 !important;
+    }
+    .next {
+      right: -13% !important;
+    }
+  }
+  .homepage #asian_fengshui_decoration .swiper-container,
+  .homepage #loose_gemstone .swiper-container {
+    height: 410px;
   }
 }
 @media screen and (max-width: 990px) {
@@ -1336,6 +1478,10 @@ body {
         margin-top: auto;
       }
     }
+  }
+  .homepage #asian_fengshui_decoration .swiper-container,
+  .homepage #loose_gemstone .swiper-container {
+    height: 460px;
   }
   .homepage #expert_craftspeople .expert_craftspeople-content .ngau-sub-title {
     margin: 10px 0;

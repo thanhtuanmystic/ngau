@@ -496,12 +496,18 @@ body {
     padding-bottom: 100px;
     background: #fff9f2;
     .swiper-container {
-      height: 380px;
+      // height: 380px;
     }
     .loose_gemstone-slider {
       position: relative;
-      overflow: hidden;
       padding-right: 0;
+      .swiper-wrapper {
+        overflow: hidden;
+      }
+      .swiper-scrollbar {
+        bottom: -8%;
+      }
+
       .loose-gemstone-box {
         position: relative;
         .product-info {
@@ -847,9 +853,6 @@ body {
   #asian_fengshui_decoration {
     padding: 0 0 5rem 0;
     background: #fff9f2;
-    .swiper-container {
-      height: 380px;
-    }
     .center-column {
       display: flex;
       flex-direction: column;
@@ -866,10 +869,15 @@ body {
       margin: 20px 0 30px 0;
     }
     .asian_fengshui_decoration-slider {
-      overflow: hidden;
       margin-top: 40px;
       position: relative;
       padding-right: 0;
+      .swiper-wrapper {
+        overflow: hidden;
+      }
+      .swiper-scrollbar {
+        bottom: -8%;
+      }
       .fengshui-box {
         position: relative;
         .product-info {
@@ -1027,6 +1035,33 @@ body {
   #testimoninals {
     background: #fff9f2;
     padding: 80px 0;
+    .slider {
+      width: 100%;
+      margin: 50px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      max-width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+    .slick-slide {
+      transition: all ease-in-out 0.3s;
+    }
+
+    .slick-active {
+    }
+
+    .slick-current {
+    }
     .testimoninals-box {
       border-radius: 20px;
       border: 2px solid #d6d6d6;
@@ -1086,7 +1121,7 @@ body {
             font-size: 24px;
             font-style: normal;
             font-weight: 600;
-            line-height: 18px; 
+            line-height: 18px;
           }
         }
         .testimonials-content {
@@ -1222,11 +1257,6 @@ body {
     }
   }
 
-  .homepage #asian_fengshui_decoration .swiper-container,
-  .homepage #loose_gemstone .swiper-container {
-    height: 470px;
-  }
-
   .homepage #expert_craftspeople .expert_craftspeople-content .ngau-title img {
     right: 60%;
   }
@@ -1234,11 +1264,6 @@ body {
 @media screen and (max-width: 1600px) {
   .container-fluid {
     max-width: 1460px;
-  }
-
-  .homepage #asian_fengshui_decoration .swiper-container,
-  .homepage #loose_gemstone .swiper-container {
-    height: 390px;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -1275,10 +1300,7 @@ body {
   .homepage #asian_fengshui_decoration .ngau-sub-title {
     margin: 10px 0 20px 0;
   }
-  .homepage #asian_fengshui_decoration .swiper-container,
-  .homepage #loose_gemstone .swiper-container {
-    height: 370px;
-  }
+
   .homepage
     #gemstone_stories
     .gemstone-stories-box
@@ -1416,10 +1438,6 @@ body {
       right: -13% !important;
     }
   }
-  .homepage #asian_fengshui_decoration .swiper-container,
-  .homepage #loose_gemstone .swiper-container {
-    height: 410px;
-  }
 }
 @media screen and (max-width: 990px) {
   .homepage #hero .saleoff-header {
@@ -1473,10 +1491,7 @@ body {
       }
     }
   }
-  .homepage #asian_fengshui_decoration .swiper-container,
-  .homepage #loose_gemstone .swiper-container {
-    height: 460px;
-  }
+
   .homepage #expert_craftspeople .expert_craftspeople-content .ngau-sub-title {
     margin: 10px 0;
   }

@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initializeSwiper(
     ".loose-gemstone-slider",
     {
-      spaceBetween: 10,
+      spaceBetween: 30,
       loop: true,
       scrollbar: {
         el: ".swiper-scrollbar",

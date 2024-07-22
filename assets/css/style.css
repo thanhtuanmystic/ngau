@@ -1004,73 +1004,67 @@ nav .navbar .links li:hover .js-sub-menu {
 .homepage #testimoninals .testimoninals-box {
   border-radius: 20px;
   border: 2px solid #d6d6d6;
-  padding: 30px 80px 60px 80px;
+  padding: 30px 80px 30px 80px;
   position: relative;
+}
+.homepage #testimoninals .testimoninals-box .hidden-slider {
   overflow: hidden;
+  padding-bottom: 30px;
+}
+.homepage #testimoninals .testimoninals-box .custom-prev {
+  position: absolute;
+  left: 2%;
+  bottom: 30%;
+}
+.homepage #testimoninals .testimoninals-box .custom-next {
+  position: absolute;
+  right: 2%;
+  bottom: 30%;
 }
 .homepage #testimoninals .testimoninals-box .ngau-title {
   color: #000;
   -webkit-text-fill-color: #000;
   display: block;
 }
-.homepage #testimoninals .testimoninals-box .swiper-container {
-  height: auto;
-}
-.homepage #testimoninals .testimoninals-box .swiper-pagination {
-  padding-bottom: 10px;
-}
 .homepage #testimoninals .testimoninals-box .ngau-sub-title {
   margin-bottom: 40px;
 }
-.homepage #testimoninals .testimoninals-box .testimoninals_slide .fb-beauty-top,
-.homepage #testimoninals .testimoninals-box .testimoninals_slide .fb-beauty-bottom {
-  position: absolute;
-}
-.homepage #testimoninals .testimoninals-box .testimoninals_slide .fb-beauty-top {
-  top: -20px;
-  left: 0;
-}
-.homepage #testimoninals .testimoninals-box .testimoninals_slide .fb-beauty-bottom {
-  right: 0;
-  bottom: -10px;
-}
-.homepage #testimoninals .testimoninals-box .testimoninals_slide .arrow-prev-fb,
-.homepage #testimoninals .testimoninals-box .testimoninals_slide .arrow-next-fb {
-  position: absolute;
-  z-index: 2;
-  flex-shrink: 0;
-  color: #9f9c9c;
-  font-size: 30px;
-}
-.homepage #testimoninals .testimoninals-box .testimoninals_slide .arrow-prev-fb {
-  top: 64%;
-  left: 2%;
-}
-.homepage #testimoninals .testimoninals-box .testimoninals_slide .arrow-next-fb {
-  top: 64%;
-  right: 2%;
-}
-.homepage #testimoninals .testimoninals-box .testimoninals_slide .testimoninals-each {
-  flex-shrink: 0;
+.homepage #testimoninals .testimoninals-box .regular .testimoninals-each {
+  position: relative;
   border-radius: 10px;
   border: 2px solid #d9d9d9;
   background: #fff9f2;
   padding: 36px 25px;
 }
-.homepage #testimoninals .testimoninals-box .testimoninals_slide .testimoninals-each .testimoninals-detail {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  margin-bottom: 20px;
+.homepage #testimoninals .testimoninals-box .regular .fb-beauty-bottom,
+.homepage #testimoninals .testimoninals-box .regular .fb-beauty-top {
+  position: absolute;
 }
-.homepage #testimoninals .testimoninals-box .testimoninals_slide .testimoninals-each .testimoninals-detail .name {
+.homepage #testimoninals .testimoninals-box .regular .fb-beauty-top {
+  top: -10%;
+  left: 0;
+}
+.homepage #testimoninals .testimoninals-box .regular .fb-beauty-bottom {
+  bottom: -10%;
+  right: 0;
+}
+.homepage #testimoninals .testimoninals-box .regular .testimoninals-detail {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.homepage #testimoninals .testimoninals-box .regular .testimoninals-detail .five-star {
+  display: flex;
+}
+.homepage #testimoninals .testimoninals-box .regular .testimoninals-detail .info .name {
   color: var(--Neutrals-Neutrals900, #2b2829);
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 18px; /* 75% */
+  line-height: 18px;
 }
-.homepage #testimoninals .testimoninals-box .testimoninals_slide .testimoninals-each .testimonials-content {
+.homepage #testimoninals .testimoninals-box .regular .testimonials-content {
+  margin-top: 20px;
   color: var(--Neutrals-Neutrals400, #9f9c9c);
   font-size: 20px;
   font-style: normal;

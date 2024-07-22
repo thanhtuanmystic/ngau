@@ -535,6 +535,7 @@ body {
               font-style: normal;
               font-weight: 600;
               line-height: normal;
+              font-family: DegularDisplay-semibold;
             }
           }
           .product-info-price {
@@ -653,7 +654,7 @@ body {
     .jewellery-slider-box {
       position: relative;
       display: flex;
-      justify-content: center;
+      // justify-content: center;
       align-items: center;
       .jewellery-stonehide-2 {
         position: absolute;
@@ -673,7 +674,7 @@ body {
       }
 
       .slide-wrap {
-        width: 500px;
+        width: 500px; 
         height: 450px;
         margin: 0 auto;
         position: relative;
@@ -1248,6 +1249,9 @@ body {
 @media screen and (min-width: 1600px) {
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
     width: 700px;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box {
+    justify-content: left;
   }
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
     .pos1 {

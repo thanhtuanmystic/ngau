@@ -529,6 +529,7 @@ nav .navbar .links li:hover .js-sub-menu {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  font-family: DegularDisplay-semibold;
 }
 .homepage #loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-price {
   display: flex;
@@ -640,7 +641,6 @@ nav .navbar .links li:hover .js-sub-menu {
 .homepage #jewellery_collection .jewellery-slider-box {
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .homepage #jewellery_collection .jewellery-slider-box .jewellery-stonehide-2 {
@@ -1186,6 +1186,9 @@ nav .navbar .links li:hover .js-sub-menu {
 @media screen and (min-width: 1600px) {
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
     width: 700px;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box {
+    justify-content: left;
   }
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos1 {
     left: 5%;

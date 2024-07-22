@@ -13,6 +13,10 @@
   font-family: DegularDisplay-bold;
   src: url(../font/DegularDisplay/DegularDisplayBold.otf);
 }
+@font-face {
+  font-family: DegularDisplay-semibold;
+  src: url(../font/DegularDisplay/DegularDisplay-Semibold.otf);
+}
 a {
   text-decoration: none;
 }
@@ -313,6 +317,7 @@ nav .navbar .links li:hover .js-sub-menu {
   -webkit-text-fill-color: transparent;
   position: relative;
   display: inline;
+  font-family: DegularDisplay-semibold;
 }
 .ngau-title img {
   position: absolute;
@@ -506,7 +511,7 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 .homepage #loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info {
   position: absolute;
-  bottom: 5%;
+  bottom: 2%;
   left: 0;
   width: 100%;
   display: flex;
@@ -855,7 +860,7 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 .homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box .product-info {
   position: absolute;
-  bottom: 5%;
+  bottom: 2%;
   left: 0;
   width: 100%;
   display: flex;
@@ -872,6 +877,7 @@ nav .navbar .links li:hover .js-sub-menu {
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
+  font-family: DegularDisplay-semibold;
   line-height: normal;
 }
 .homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box .product-info .product-info-price {
@@ -1072,6 +1078,11 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 .homepage #testimoninals .testimoninals-box .regular .testimoninals-detail .five-star {
   display: flex;
+}
+.homepage #testimoninals .testimoninals-box .regular .testimoninals-detail .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .homepage #testimoninals .testimoninals-box .regular .testimoninals-detail .info .name {
   color: var(--Neutrals-Neutrals900, #2b2829);

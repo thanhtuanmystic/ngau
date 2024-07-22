@@ -25,7 +25,7 @@
       init_arr = [],
       item_arr = [], // 存起所有的li
       flag = 1;
-    // 存储样式和li
+    
     function slider() {
       for (var i = 0; i < show_len; i++) {
         var $cur_li = $showArea_li.eq(i); //Hình ảnh hiện đang hiển thị

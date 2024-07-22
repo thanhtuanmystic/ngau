@@ -1,4 +1,3 @@
-
 // search-box open close js code
 let navbar = document.querySelector(".navbar");
 
@@ -51,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   initializeSwiper(
-    
     ".mySwiper",
     {
       spaceBetween: 10,
@@ -104,26 +102,5 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     ".arrow-prev-afd",
     ".arrow-next-afd"
-  );
-
-  initializeSwiper(
-    ".testimoninals-slider",
-    {
-      spaceBetween: 10,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".arrow-next-fb",
-        prevEl: ".arrow-prev-fb",
-      },
-    },
-    function (windowWidth) {
-      if (windowWidth >= 1200) return 2;
-      if (windowWidth >= 990) return 1.5;
-      return 1;
-    }
   );
 });

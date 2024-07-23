@@ -42,15 +42,21 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  height: 90px;
+  padding: 22px 0;
   background: #fff9f2;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   z-index: 99;
 }
+nav .logo-top {
+  margin-bottom: 30px;
+}
+nav ol,
+nav ul {
+  padding: 0;
+  margin: 0;
+}
 
 nav .navbar {
-  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -60,16 +66,49 @@ nav .navbar {
   padding-top: 0;
   padding-bottom: 0;
 }
+nav .navbar .search-box {
+  position: relative;
+  width: 250px;
+}
+nav .navbar .search-box i {
+  position: absolute;
+  top: 24%;
+  left: 7%;
+  font-size: 18px;
+  opacity: 0.9;
+}
+nav .navbar .search-box input {
+  padding: 6px 0;
+  border-radius: 29px;
+  border: 1px solid #000;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  padding-left: 40px;
+  width: 100%;
+}
+nav .navbar .search-box input::placeholder {
+  color: #000;
+}
 
-.navbar .logo a {
-  font-size: 30px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
+.navbar .logo .hide-on-desktop {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.navbar .logo .hide-on-mobile {
+  display: none;
 }
 
 nav .navbar .nav-links {
-  line-height: 90px;
   height: 100%;
 }
 
@@ -92,7 +131,7 @@ nav .navbar .links li a {
   white-space: nowrap;
   color: var(--Neutrals-Neutrals700, #5a5555);
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   position: relative;
 }
 nav .navbar .links li a::before, nav .navbar .links li a::after {
@@ -100,7 +139,7 @@ nav .navbar .links li a::before, nav .navbar .links li a::after {
 }
 nav .navbar .links li a::after {
   position: absolute;
-  bottom: 30%;
+  bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
@@ -203,9 +242,22 @@ nav .navbar .links li:hover .js-sub-menu {
     font-size: 15px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1300px) {
+  .logo-top {
+    display: none;
+  }
+  .navbar .logo .hide-on-desktop {
+    display: none;
+  }
+  .navbar .logo .hide-on-mobile {
+    display: block;
+  }
+  nav .navbar .search-box {
+    width: auto;
+  }
   nav {
     /* position: relative; */
+    padding: 10px 0;
   }
   .navbar .bx-menu {
     display: block;
@@ -301,11 +353,23 @@ nav .navbar .links li:hover .js-sub-menu {
     transform: rotate(90deg);
   }
 }
+@media (max-width: 500px) {
+  .navbar .logo .hide-on-mobile {
+    display: none;
+  }
+  body {
+    padding-top: 56px !important;
+  }
+}
 @media (max-width: 370px) {
   nav .navbar .nav-links {
     max-width: 100%;
   }
 }
+body {
+  padding-top: 210px;
+}
+
 .ngau-title {
   font-size: 96px;
   font-style: normal;
@@ -1101,14 +1165,14 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 .homepage footer {
   background: url(../img/footer-background.png) lightgray 50%/cover no-repeat;
-  padding: 50px 0;
+  padding: 50px 0 20px 0;
 }
 .homepage footer ul {
   padding: 0;
   margin: 0;
 }
-.homepage footer .footer-logo {
-  margin-bottom: 24px;
+.homepage footer .footer-logo img {
+  margin-bottom: 40px;
 }
 .homepage footer .footer-col-title {
   color: #1d1d1d;
@@ -1151,6 +1215,11 @@ nav .navbar .links li:hover .js-sub-menu {
   line-height: 23.4px; /* 130% */
   margin-top: 20px;
 }
+.homepage footer .bottom-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .homepage footer .list-social {
   display: flex;
   align-items: center;
@@ -1165,7 +1234,6 @@ nav .navbar .links li:hover .js-sub-menu {
   font-style: normal;
   font-weight: 400;
   line-height: 22.2px; /* 185% */
-  margin-top: 50px;
 }
 
 .swiper-scrollbar-drag {
@@ -1216,10 +1284,19 @@ nav .navbar .links li:hover .js-sub-menu {
   .container-fluid {
     max-width: 1460px;
   }
+  body {
+    padding-top: 176px;
+  }
+  nav .logo-top {
+    margin-bottom: 10px;
+  }
+  nav .logo-top img {
+    max-width: 16%;
+  }
 }
 @media screen and (max-width: 1400px) {
   body {
-    padding-top: 90px;
+    padding-top: 70px;
   }
   .homepage #hero {
     height: auto;

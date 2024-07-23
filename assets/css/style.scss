@@ -42,14 +42,24 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  height: 90px;
+  padding: 22px 0;
+  // height: 100%;
+  // height: 200px;
   background: #fff9f2;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   z-index: 99;
+  .logo-top {
+    margin-bottom: 30px;
+  }
+  ol,
+  ul {
+    padding: 0;
+    margin: 0;
+  }
 }
+
 nav .navbar {
-  height: 100%;
+  // height: 100%;
   // max-width: 1400px;
   width: 100%;
   display: flex;
@@ -59,16 +69,49 @@ nav .navbar {
   /* background: red; */
   padding-top: 0;
   padding-bottom: 0;
+  .search-box {
+    position: relative;
+    width: 250px;
+    i {
+      position: absolute;
+      top: 24%;
+      left: 7%;
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    input {
+      padding: 6px 0;
+      border-radius: 29px;
+      border: 1px solid #000;
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      line-height: normal;
+      padding-left: 40px;
+      width: 100%;
+      &::placeholder {
+        color: #000;
+      }
+    }
+  }
 }
-.navbar .logo a {
-  font-size: 30px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
+.navbar .logo .hide-on-desktop {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.navbar .logo .hide-on-mobile {
+  display: none;
 }
 
 nav .navbar .nav-links {
-  line-height: 90px;
+  // line-height: 90px;
   height: 100%;
 }
 nav .navbar .links {
@@ -88,7 +131,7 @@ nav .navbar .links li a {
   white-space: nowrap;
   color: var(--Neutrals-Neutrals700, #5a5555);
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   position: relative;
   &::before,
   &::after {
@@ -96,7 +139,7 @@ nav .navbar .links li a {
   }
   &::after {
     position: absolute;
-    bottom: 30%;
+    bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
@@ -193,9 +236,22 @@ nav .navbar .links li:hover .js-sub-menu {
     font-size: 15px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1300px) {
+  .logo-top {
+    display: none;
+  }
+  .navbar .logo .hide-on-desktop {
+    display: none;
+  }
+  .navbar .logo .hide-on-mobile {
+    display: block;
+  }
+  nav .navbar .search-box {
+    width: auto;
+  }
   nav {
     /* position: relative; */
+    padding: 10px 0;
   }
   .navbar .bx-menu {
     display: block;
@@ -292,6 +348,15 @@ nav .navbar .links li:hover .js-sub-menu {
     transform: rotate(90deg);
   }
 }
+@media (max-width: 500px) {
+  .navbar .logo .hide-on-mobile {
+    display: none;
+  }
+  body {
+    padding-top: 56px !important;
+  }
+}
+
 @media (max-width: 370px) {
   nav .navbar .nav-links {
     max-width: 100%;
@@ -300,6 +365,7 @@ nav .navbar .links li:hover .js-sub-menu {
 
 // Code section
 body {
+  padding-top: 210px;
 }
 .ngau-title {
   font-size: 96px;
@@ -1160,13 +1226,13 @@ body {
   footer {
     background: url(../img/footer-background.png) lightgray 50% / cover
       no-repeat;
-    padding: 50px 0;
+    padding: 50px 0 20px 0;
     ul {
       padding: 0;
       margin: 0;
     }
-    .footer-logo {
-      margin-bottom: 24px;
+    .footer-logo img{
+      margin-bottom: 40px;
     }
     .footer-col-title {
       color: #1d1d1d;
@@ -1211,6 +1277,11 @@ body {
         }
       }
     }
+    .bottom-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
     .list-social {
       display: flex;
       align-items: center;
@@ -1225,7 +1296,6 @@ body {
       font-style: normal;
       font-weight: 400;
       line-height: 22.2px; /* 185% */
-      margin-top: 50px;
     }
   }
 }
@@ -1287,10 +1357,19 @@ body {
   .container-fluid {
     max-width: 1460px;
   }
+  body {
+    padding-top: 176px;
+  }
+  nav .logo-top {
+    margin-bottom: 10px;
+    img {
+      max-width: 16%;
+    }
+  }
 }
 @media screen and (max-width: 1400px) {
   body {
-    padding-top: 90px;
+    padding-top: 70px;
   }
   .homepage #hero {
     height: auto;
@@ -1761,7 +1840,7 @@ body {
       -moz-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
-}
+    }
     .pos4 {
       right: 2%;
       width: 0;
@@ -1777,7 +1856,6 @@ body {
     }
     .next {
       top: 35%;
-
     }
   }
 }

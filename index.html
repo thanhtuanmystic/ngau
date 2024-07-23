@@ -32,17 +32,29 @@
 
     <title>NGAU</title>
   </head>
-  <style></style>
-
   <body>
     <header>
       <nav>
+        <div class="logo-top text-center">
+          <a href="#"
+            ><img srcset="./assets/img/newheaderlogo.png 2x" alt=""
+          /></a>
+        </div>
         <div class="navbar container-fluid">
           <i class="fa fa-bars bx-menu" aria-hidden="true"></i>
           <div class="logo">
-            <a href="#"
-              ><img srcset="./assets/img/header-logo.png 2x" alt=""
-            /></a>
+            <div class="hide-on-desktop">
+              Follow us in:
+              <a href="#"
+                ><img srcset="./assets/img/header-fb-icon.png 2x"
+              /></a>
+              <a href="#"
+                ><img srcset="./assets/img/header-ig-icon.png 2x" alt=""
+              /></a>
+            </div>
+            <div class="hide-on-mobile">
+              <img srcset="./assets/img/header-logo.png 2x" alt="" />
+            </div>
           </div>
           <div class="nav-links">
             <div class="sidebar-logo">
@@ -53,11 +65,17 @@
             </div>
             <ul class="links">
               <li><a href="#">Home</a></li>
-              <li><a href="#">Product</a></li>
-              <li><a href="#">Gemstone stories</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Loose gemstone</a></li>
+              <li><a href="#">Jewellery Collection</a></li>
+              <li><a href="#">Asian fengshui decoration</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Gemstone Story</a></li>
+              <li><a href="#">Contact us</a></li>
             </ul>
+          </div>
+          <div class="search-box">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" placeholder="Search..." />
           </div>
         </div>
       </nav>
@@ -927,7 +945,6 @@
           </div>
         </div>
       </section>
-
       <section id="testimoninals">
         <div class="container-fluid">
           <div class="testimoninals-box">
@@ -1082,55 +1099,26 @@
       </section>
       <footer>
         <div class="container-fluid">
-          <div class="footer-logo">
-            <a href="#"
-              ><img srcset="./assets/img/footer-logo.png 2x" alt=""
-            /></a>
-          </div>
           <div class="row gy-4">
-            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <a href="#" class="footer-logo"
+                ><img srcset="./assets/img/footer-logo.png 2x" alt=""
+              /></a>
               <div class="footer-col-title">Find Us</div>
               <ul class="footer-col-list">
                 <li><a href="#">Natural Gemstones Australia</a></li>
                 <li><a href="#">+ 046 666 8879</a></li>
                 <li><a href="#">Info@ngau.com.au</a></li>
                 <li><a href="#">5 Clarke Street, Sunshine VIC 3020</a></li>
-                <li><a href="#">Monday - Friday: 10am-5:30pm</a></li>
-                <li><a href="#">Saturday: 10am-5pm</a></li>
                 <a href="#" class="book"> Book an appointment </a>
               </ul>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-12 col-12">
-              <div class="footer-col-title">Product</div>
-              <ul class="footer-col-list">
-                <li><a href="#">Loose gemstone</a></li>
-                <li><a href="#">Asian fengshui</a></li>
-                <li><a href="#">Jewellery Collection</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-              <div class="footer-col-title">About Us</div>
-              <ul class="footer-col-list">
-                <li><a href="#">Diamond Experience</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Free Shipping</a></li>
-                <li><a href="#">Returns & Refunds</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-              <div class="footer-col-title">Newsletter</div>
-              <ul class="footer-col-list">
-                <li>
-                  Sign up to receive updates on our extensive range of diamonds
-                  and hand-crafted jewellery.
-                </li>
-                <li><input type="text" placeholder="Email address" /></li>
-              </ul>
+            <div class="col-lg-8">
+              <img srcset="./assets/img/footer-map-img.png 2x" alt="" />
             </div>
           </div>
-          <hr />
+          <hr style="margin-top: 30px"/>
+         <div class="bottom-footer">
           <div class="list-social">
             <a href="#">
               <img srcset="./assets/img/footer-fb-icon.png 2x" alt=""
@@ -1140,6 +1128,7 @@
             /></a>
           </div>
           <div class="copyright">Copyright © 2024, Ngau</div>
+         </div>
         </div>
       </footer>
     </div>

@@ -622,6 +622,11 @@ body {
   position: absolute;
   z-index: 2;
 }
+.homepage #loose_gemstone .loose_gemstone-slider .arrow-next-lg:hover,
+.homepage #loose_gemstone .loose_gemstone-slider .arrow-prev-lg:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
 .homepage #loose_gemstone .loose_gemstone-slider .arrow-next-lg {
   right: 0;
   top: 46%;
@@ -971,6 +976,11 @@ body {
   position: absolute;
   z-index: 2;
 }
+.homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .arrow-next-afd:hover,
+.homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .arrow-prev-afd:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
 .homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .arrow-next-afd {
   right: 0;
   top: 46%;
@@ -1100,13 +1110,18 @@ body {
   overflow: hidden;
   padding-bottom: 30px;
 }
-.homepage #testimoninals .testimoninals-box .custom-prev {
+.homepage #testimoninals .testimoninals-box .custom-next, .homepage #testimoninals .testimoninals-box .custom-prev {
   position: absolute;
+}
+.homepage #testimoninals .testimoninals-box .custom-next:hover, .homepage #testimoninals .testimoninals-box .custom-prev:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.homepage #testimoninals .testimoninals-box .custom-prev {
   left: 2%;
   bottom: 30%;
 }
 .homepage #testimoninals .testimoninals-box .custom-next {
-  position: absolute;
   right: 2%;
   bottom: 30%;
 }

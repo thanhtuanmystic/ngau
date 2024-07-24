@@ -82,15 +82,34 @@
     </header>
     <div class="homepage">
       <section id="hero">
-        <div class="limited">LIMITED TIME OFFER</div>
-        <div class="saleoff-header">
-          Up to <span>30% off</span>
-          <div class="seperate"></div>
-          loose gemstone
+        <div class="row gy-4 d-flex align-items-center">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="hero-content-left">
+              <div class="limited">LIMITED TIME OFFER</div>
+              <div class="sale-percent">
+                Up to <span>30% off</span>
+                <div class="seperate"></div>
+                loose gemstone
+              </div>
+              <a href="#" class="header-btn"
+                >Enquiry now<img srcset="./assets/img/arrow-right-white.png 2x"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 hero-content-right">
+            <div class="swiper hero-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img srcset="./assets/img/slide-hero-demo.png 2x" />
+                </div>
+                <div class="swiper-slide">
+                  <img srcset="./assets/img/slide-hero-demo.png 2x" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
         </div>
-        <a href="" class="header-btn"
-          >Enquiry now <img srcset="./assets/img/arrow-right.png 2x" alt=""
-        /></a>
       </section>
       <section id="exclusive_offer">
         <div class="container-fluid">
@@ -1117,18 +1136,18 @@
               <img srcset="./assets/img/footer-map-img.png 2x" alt="" />
             </div>
           </div>
-          <hr style="margin-top: 30px"/>
-         <div class="bottom-footer">
-          <div class="list-social">
-            <a href="#">
-              <img srcset="./assets/img/footer-fb-icon.png 2x" alt=""
-            /></a>
-            <a href="#"
-              ><img srcset="./assets/img/footer-ig-icon.png 2x" alt=""
-            /></a>
+          <hr style="margin-top: 30px" />
+          <div class="bottom-footer">
+            <div class="list-social">
+              <a href="#">
+                <img srcset="./assets/img/footer-fb-icon.png 2x" alt=""
+              /></a>
+              <a href="#"
+                ><img srcset="./assets/img/footer-ig-icon.png 2x" alt=""
+              /></a>
+            </div>
+            <div class="copyright">Copyright © 2024, Ngau</div>
           </div>
-          <div class="copyright">Copyright © 2024, Ngau</div>
-         </div>
         </div>
       </footer>
     </div>
@@ -1174,6 +1193,14 @@
             },
           ],
         });
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".hero-swiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
       });
     </script>
     <script src="./assets/js/main.js"></script>

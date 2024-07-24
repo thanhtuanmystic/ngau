@@ -36,6 +36,7 @@ img {
   // padding-left: 70px;
   // padding-right: 70px;
   max-width: 1780px;
+  // max-width: calc(100vw - 140px);
 }
 nav {
   position: fixed;
@@ -236,7 +237,7 @@ nav .navbar .links li:hover .js-sub-menu {
     font-size: 15px;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .logo-top {
     display: none;
   }
@@ -423,53 +424,58 @@ body {
 }
 .homepage {
   #hero {
-    background-image: url(../img/Hero.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 900px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding-left: 70px;
-    .limited {
-      color: var(--Base-Base-Black, #0a0a0b);
-
-      font-size: 28px;
-      font-weight: 300;
-    }
-    .saleoff-header {
-      font-size: 96px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 90px; /* 93.75% */
-      background: linear-gradient(80deg, #57351e 3.71%, #000 94.27%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 46px;
-      span {
-        font-weight: 500;
-        line-height: 90px;
+    overflow: hidden;
+    .hero-content-left {
+      padding-left: 140px;
+      .limited {
+        color: var(--Base-Base-Black, #0a0a0b);
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+      .sale-percent {
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 90px; /* 93.75% */
+        background: linear-gradient(80deg, #57351e 3.71%, #000 94.27%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        span {
+          font-weight: 500;
+        }
+      }
+      .header-btn {
+        display: inline-flex;
+        padding: 10px 40px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border-radius: 5px;
+        background: var(
+          --Gradient-2,
+          linear-gradient(80deg, #57351e 3.71%, #000 94.27%)
+        );
+        color: var(--Neutrals-Base-White, #fafafa);
+        font-size: 20px;
+        font-style: normal;
+        line-height: normal;
+        margin-top: 40px;
+        &:hover {
+          opacity: 0.8;
+        }
       }
     }
-    .header-btn {
-      display: inline-flex;
-      padding: 10px 40px;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      border-radius: 5px;
-      background: var(
-        --Gradient-2,
-        linear-gradient(80deg, #57351e 3.71%, #000 94.27%)
-      );
-      color: var(--Neutrals-Base-White, #fafafa);
-      font-size: 20px;
-      font-weight: 400;
-      &:hover {
-        opacity: 0.8;
+    .hero-content-right {
+      img {
+        width: 100%;
+      }
+      .swiper-pagination {
+        .swiper-pagination-bullet-active {
+          background: #000;
+        }
       }
     }
   }
@@ -913,7 +919,7 @@ body {
         line-height: 100px;
         img {
           top: -13%;
-          right: 55%;
+          right: 49%;
         }
       }
       .ngau-sub-title {
@@ -1231,7 +1237,7 @@ body {
       padding: 0;
       margin: 0;
     }
-    .footer-logo img{
+    .footer-logo img {
       margin-bottom: 40px;
     }
     .footer-col-title {
@@ -1317,6 +1323,14 @@ body {
 }
 
 // Responsive
+@media screen and (max-width: 1920px) {
+  .container-fluid {
+    max-width: calc(100vw - 140px);
+  }
+  .homepage #hero .hero-content-left {
+    padding-left: 70px;
+  }
+}
 @media screen and (min-width: 1600px) {
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
     width: 700px;
@@ -1354,9 +1368,9 @@ body {
   }
 }
 @media screen and (max-width: 1600px) {
-  .container-fluid {
-    max-width: 1460px;
-  }
+  // .container-fluid {
+  //   max-width: calc(100vw - 70px);
+  // }
   body {
     padding-top: 176px;
   }
@@ -1366,14 +1380,25 @@ body {
       max-width: 16%;
     }
   }
+  nav .navbar .search-box {
+    width: 150px;
+  }
 }
 @media screen and (max-width: 1400px) {
+  .container-fluid {
+    max-width: calc(100vw - 70px);
+  }
+  .homepage #hero .hero-content-left {
+    padding-left: 40px;
+  }
   body {
     padding-top: 70px;
   }
   .homepage #hero {
     height: auto;
-    padding: 80px;
+  }
+  .homepage #hero .hero-content-left .sale-percent {
+    font-size: 70px;
   }
   .homepage #exclusive_offer .col-right .ngau-title {
     margin-bottom: 0;
@@ -1545,6 +1570,10 @@ body {
       right: 16% !important;
     }
   }
+  .homepage #hero .hero-content-left .sale-percent {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 @media screen and (max-width: 990px) {
   .homepage #hero .saleoff-header {
@@ -1552,7 +1581,6 @@ body {
     font-size: 60px;
   }
   .homepage #hero {
-    padding: 50px 30px;
   }
   .homepage #hero .saleoff-header {
     margin-bottom: 20px;
@@ -1750,6 +1778,24 @@ body {
     padding: 0 30px 30px 30px;
     min-height: auto;
   }
+  .homepage #hero .hero-content-left {
+    padding-top: 30px;
+    .sale-percent {
+      font-size: 46px;
+    }
+  }
+  .homepage #hero .hero-content-left .header-btn {
+    margin-top: 20px;
+  }
+  .homepage #hero .hero-content-left {
+    padding-right: 40px;
+  }
+  .homepage #hero .hero-content-left .limited {
+    font-size: 20px;
+  }
+  .homepage #hero .hero-content-left .sale-percent {
+    font-size: 36px;
+  }
 }
 @media screen and (max-width: 700px) {
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
@@ -1820,6 +1866,17 @@ body {
       right: 2%;
     }
   }
+  .container-fluid {
+    max-width: calc(100vw - 10px);
+  }
+  .homepage #hero .hero-content-left {
+    padding: 20px 10px 0 10px;
+  }
+  .homepage #hero .hero-content-left .header-btn {
+    margin-top: 0;
+    padding: 8px 26px;
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 500px) {
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
@@ -1857,5 +1914,30 @@ body {
     .next {
       top: 35%;
     }
+  }
+  .homepage #hero .hero-content-left .sale-percent {
+    font-size: 30px;
+  }
+  .homepage #exclusive_offer {
+    padding: 30px 0;
+  }
+  .homepage #jewellery_collection {
+    padding-top: 30px;
+  }
+  .homepage #expert_craftspeople {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  .homepage #service .container-fluid {
+    padding: 30px 10px;
+  }
+  .homepage #testimoninals .testimoninals-box .ngau-sub-title {
+    margin-bottom: 0;
+  }
+  .slick-dots {
+    bottom: -16% !important;
+  }
+  .homepage #testimoninals {
+    padding: 0;
   }
 }

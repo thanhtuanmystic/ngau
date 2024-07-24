@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
       loop: true,
     },
     function (windowWidth) {
-      return windowWidth >= 450 ? 2.9 : 1.5;
+      return windowWidth >= 500 ? 2.9 : 1.5;
     },
     ".arrow-prev",
     ".arrow-next"

@@ -11,6 +11,13 @@ menuOpenBtn.onclick = function () {
 menuCloseBtn.onclick = function () {
   navLinks.style.left = "-100%";
 };
+// Hero banner slide
+var swiper = new Swiper(".hero-swiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 //  Xử lý toàn bộ slide
 document.addEventListener("DOMContentLoaded", function () {
@@ -105,4 +112,34 @@ document.addEventListener("DOMContentLoaded", function () {
     ".arrow-prev-afd",
     ".arrow-next-afd"
   );
+});
+
+// JS Jewellery collection
+$("#demo").RollingSlider({
+  showArea: "#example",
+  prev: "#jprev",
+  next: "#jnext",
+  moveSpeed: 300,
+  autoPlay: false,
+});
+
+// Testimonials
+$(document).on("ready", function () {
+  $(".regular").slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    prevArrow: $(".custom-prev"),
+    nextArrow: $(".custom-next"),
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 });

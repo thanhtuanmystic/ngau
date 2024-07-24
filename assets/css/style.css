@@ -1110,10 +1110,12 @@ body {
   overflow: hidden;
   padding-bottom: 30px;
 }
-.homepage #testimoninals .testimoninals-box .custom-next, .homepage #testimoninals .testimoninals-box .custom-prev {
+.homepage #testimoninals .testimoninals-box .custom-next,
+.homepage #testimoninals .testimoninals-box .custom-prev {
   position: absolute;
 }
-.homepage #testimoninals .testimoninals-box .custom-next:hover, .homepage #testimoninals .testimoninals-box .custom-prev:hover {
+.homepage #testimoninals .testimoninals-box .custom-next:hover,
+.homepage #testimoninals .testimoninals-box .custom-prev:hover {
   cursor: pointer;
   opacity: 0.8;
 }

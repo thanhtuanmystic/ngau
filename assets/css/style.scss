@@ -1165,7 +1165,8 @@ body {
         overflow: hidden;
         padding-bottom: 30px;
       }
-      .custom-next, .custom-prev {
+      .custom-next,
+      .custom-prev {
         position: absolute;
         &:hover {
           cursor: pointer;

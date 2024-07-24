@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollbar: {
         el: ".swiper-scrollbar",
         hide: false,
-        draggable: true
+        draggable: true,
       },
     },
     function (windowWidth) {
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollbar: {
         el: ".swiper-scrollbar",
         hide: false,
-        draggable: true  
+        draggable: true,
       },
     },
     function (windowWidth) {

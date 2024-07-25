@@ -1289,6 +1289,10 @@ body {
     border-right: 3px solid #dddddc;
     border-top: 3px solid #dddddc;
     border-bottom: 3px solid #dddddc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
   }
   padding-bottom: 70px;
   background: #fff9f2;
@@ -1349,6 +1353,12 @@ body {
   .product-loose-gemstone {
     background-image: url(../img/product/loosegemstone-bg.png);
   }
+  .product-jewellery {
+    background-image: url(../img/product/jc-bg.png);
+  }
+  .product-asianfengshui {
+    background-image: url(../img/product/fengshui-bg.png);
+  }
   .product-hero {
     background-repeat: no-repeat;
     background-size: cover;
@@ -1380,9 +1390,44 @@ body {
   .list-product {
     padding: 60px 0;
     background: #fff9f2;
-    .breadcrumb {
+    .over-list-product {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin-bottom: 40px;
+      position: relative;
+      img {
+        position: absolute;
+        right: 1%;
+      }
+      .breadcrumb {
+        margin-bottom: 0;
+        color: var(--Neutrals-Neutrals600, #726c6c);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        span {
+          color: var(--Neutrals-Neutrals900, #2b2829);
+          font-family: DegularDisplay-semibold;
+          margin-left: 6px;
+        }
+      }
+      select {
+        background: #fff9f2;
+        border-radius: 5px;
+        border: 1px solid var(--Neutrals-Neutrals500, #898384);
+        padding: 8px 40px 8px 10px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
     }
+
     .product-box {
       position: relative;
       .product-info {
@@ -1558,6 +1603,22 @@ footer {
     padding-left: 70px;
   }
 }
+@media screen and (max-width: 1800px) {
+  .booking_appointment .booking-right-content .booking-form .form-title {
+    font-size: 70px;
+    margin-bottom: 0;
+  }
+  .booking_appointment .booking-right-content .booking-form {
+    align-items: center;
+  }
+  .booking_appointment .booking-right-content .booking-form .form-title img {
+    top: -23%;
+    right: -12%;
+  }
+  .booking_appointment .booking-right-content .booking-form {
+    gap: 18px;
+  }
+}
 @media screen and (min-width: 1600px) {
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
     width: 700px;
@@ -1618,6 +1679,9 @@ footer {
     .product-info-row
     .product-name {
     font-size: 20px;
+  }
+  .booking_appointment .booking-right-content .booking-form .form-title {
+    font-size: 60px;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -1784,6 +1848,12 @@ footer {
   .homepage #expert_craftspeople .expert_craftspeople-content .ngau-sub-title {
     margin: 0 0 10px 0;
   }
+  .booking_appointment .container-fluid .row {
+    border: none;
+  }
+  .booking-content-left img {
+    display: none;
+  }
 
   .ngau-title img {
     display: none;
@@ -1838,6 +1908,14 @@ footer {
   .product-page .product-hero .product-name {
     font-size: 66px;
     margin-bottom: 10px;
+  }
+  .booking_appointment .booking-right-content {
+    border: 1px solid #dddddc;
+    padding: 20px 0 50px 0;
+    border-radius: 10px;
+  }
+  .service-seperate {
+    display: none;
   }
 }
 @media screen and (max-width: 990px) {
@@ -1964,6 +2042,17 @@ footer {
   .product-page .product-hero .product-name {
     font-size: 50px;
     line-height: 50px;
+  }
+  .booking_appointment .booking-right-content .booking-form {
+    gap: 10px;
+  }
+  .booking_appointment .booking-right-content .booking-form .form-row input,
+  .booking_appointment .booking-right-content .booking-form .form-row textarea {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  .booking_appointment .booking-right-content .booking-form .booking-btn {
+    padding: 10px 20px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -2184,6 +2273,22 @@ footer {
   .product-page .product-hero .product-name {
     font-size: 30px;
   }
+  .booking_appointment .booking-right-content .booking-form .form-title {
+    font-size: 40px;
+  }
+  .booking_appointment .booking-right-content .booking-form .form-row input,
+  .booking_appointment .booking-right-content .booking-form .form-row textarea {
+    padding: 6px 10px;
+  }
+  .booking_appointment .booking-right-content .booking-form .booking-btn {
+    padding: 6px 10px;
+  }
+  .booking_appointment .booking-right-content {
+    padding: 20px 0;
+  }
+  .booking_appointment {
+    padding-bottom: 30px;
+  }
 }
 @media screen and (max-width: 500px) {
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
@@ -2254,5 +2359,25 @@ footer {
     padding: 10px;
     font-size: 16px;
     gap: 10px;
+  }
+  .booking_appointment .booking-right-content .booking-form .form-title {
+    font-size: 30px;
+  }
+  .product-page .list-product {
+    padding: 30px 0;
+  }
+  .product-page .list-product .over-list-product {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    img {
+      bottom: 12%;
+    }
+  }
+  .product-page .list-product .over-list-product .breadcrumb {
+    font-size: 18px;
+  }
+  .product-page .list-product .over-list-product select {
+    font-size: 14px;
   }
 }

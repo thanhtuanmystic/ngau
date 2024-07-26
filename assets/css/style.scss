@@ -1365,6 +1365,17 @@ body {
   .contact-us {
     background-image: url(../img/product/contact-us-bg.png);
   }
+  .about-us {
+    background-image: url(../img/product/about-us-bg.png);
+  }
+  .product-describe {
+    color: var(--Backgrounds-Primary, #fff);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31px;
+    width: 40%;
+  }
   .product-hero {
     background-repeat: no-repeat;
     background-size: cover;
@@ -1434,7 +1445,6 @@ body {
         line-height: normal;
       }
     }
-
     .product-box {
       position: relative;
       .product-info {
@@ -1537,6 +1547,330 @@ body {
       .pagination-active {
         background: var(--Neutrals-Neutrals800, #433e3f);
         color: #fff;
+      }
+    }
+    .about-us-row {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      .about-us-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .ngau-title {
+          display: inline-block;
+          line-height: 90px;
+          img {
+            top: -18%;
+            right: -12%;
+          }
+        }
+        .product-describe {
+          color: #000;
+          width: 80%;
+          margin-top: 24px;
+        }
+        .ngau-btn {
+          margin-top: 40px;
+          width: 280px;
+        }
+      }
+      .about-us-img {
+        position: relative;
+        .about-us-layer {
+          position: absolute;
+          width: 50%;
+          bottom: -10%;
+          left: -10%;
+        }
+      }
+    }
+    .post-content {
+      .post-title {
+        font-size: 64px;
+        font-family: DegularDisplay-semibold;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 90px;
+        background: linear-gradient(80deg, #57351e 33.59%, #000 94.27%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 26px;
+      }
+      .post-info {
+        color: #797979;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+      }
+      .heading {
+        color: var(--Base-Base-Black, #0a0a0b);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 20px;
+      }
+      .post-text {
+        color: var(--Base-Base-Black, #0a0a0b);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.8;
+        margin-bottom: 20px;
+      }
+    }
+    .post-another {
+      .tag-part {
+        ul {
+          padding: 0;
+          margin: 0;
+        }
+        display: flex;
+        align-items: center;
+        .tag-name {
+          color: var(--Base-Base-Black, #0a0a0b);
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          width: 10%;
+        }
+        .tag-list {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          flex-wrap: wrap;
+
+          li {
+            border: 1px solid var(--Neutrals-Neutrals500, #898384);
+            padding: 10px 20px;
+            color: var(--Neutrals-Neutrals600, #726c6c);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+        .share-list {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+    }
+    .post-nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 0;
+      border-top: 1px solid #9f9c9c;
+      border-bottom: 1px solid #9f9c9c;
+      margin: 50px 0;
+      position: relative;
+      a {
+        color: inherit;
+      }
+      .over {
+        color: var(--Neutrals-Neutrals600, #726c6c);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .under {
+        color: var(--Neutrals-Neutrals1000, #151314);
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .post-next {
+        .over {
+          text-align: right;
+        }
+      }
+      .post-nav-seperate {
+        width: 1px;
+        background: var(--Neutrals-Neutrals400, #9f9c9c);
+        position: absolute;
+        top: 10%;
+        height: 80%;
+        left: 50%;
+      }
+    }
+    .post-comment {
+      .comment-count {
+        color: var(--Neutrals-Neutrals1000, #151314);
+        text-align: center;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .comment-content {
+        display: flex;
+        align-content: flex-start;
+        gap: 30px;
+        .comment-info {
+          display: flex;
+          flex-direction: column;
+          .name {
+            color: var(--Neutrals-Neutrals1000, #151314);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          .datetime {
+            color: var(--Neutrals-Neutrals1000, #151314);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+          .content {
+            color: var(--Base-Base-Black, #0a0a0b);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 16px;
+            margin-bottom: 10px;
+          }
+          .reply-click {
+            color: var(--Neutrals-Neutrals1000, #151314);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-decoration: underline;
+          }
+        }
+      }
+      .reply-box {
+        margin-top: 20px;
+        .comment-sub-heading {
+          color: var(--Neutrals-Neutrals700, #5a5555);
+          text-align: center;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 40px;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 24px;
+          .form-row {
+            width: 100%;
+            textarea,
+            input {
+              background: #fff9f2;
+              padding: 18px 30px;
+            }
+          }
+          .reply-btn {
+            display: flex;
+            padding: 10px 40px;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-shrink: 0;
+            border-radius: 5px;
+            background: #0a0a0b;
+            color: var(--Neutrals-Base-White, #fafafa);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+    .sidebar {
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+      .lastest-title {
+        color: var(--Neutrals-Neutrals1000, #151314);
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .latest-col {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 40px;
+        padding-bottom: 60px;
+        border-bottom: 1px solid #9f9c9c;
+        .latest-row {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          .datetime {
+            color: #797979;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            margin-bottom: 10px;
+          }
+          .post-the-title {
+            color: var(--Base-Base-Black, #0a0a0b);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+      }
+      .border-bottom {
+        border-bottom: 1px solid #9f9c9c !important;
+      }
+      .social {
+        padding: 40px 0;
+
+        .title {
+          color: var(--Neutrals-Neutrals1000, #151314);
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-bottom: 20px;
+        }
+        .social-list {
+          display: flex;
+          align-items: center;
+          gap: 26px;
+        }
+        .tag-list {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          flex-wrap: wrap;
+          li {
+            border: 1px solid var(--Neutrals-Neutrals500, #898384);
+            padding: 10px 20px;
+            color: var(--Neutrals-Neutrals600, #726c6c);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
       }
     }
   }
@@ -1977,6 +2311,28 @@ footer {
     font-size: 80px;
     margin-bottom: 20px;
   }
+  .about-us-content .ngau-title .seperate {
+    display: none;
+  }
+  .product-page .list-product .about-us-row .about-us-content .ngau-title img {
+    top: -26%;
+    right: -15%;
+  }
+  .product-page
+    .list-product
+    .about-us-row
+    .about-us-content
+    .product-describe {
+    margin-top: 0;
+  }
+  .product-page .list-product .sidebar .latest-col .latest-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .product-page .list-product .post-content .post-title {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1999,7 +2355,8 @@ footer {
     display: none;
   }
 
-  .ngau-title img, .form-title img {
+  .ngau-title img,
+  .form-title img {
     display: none;
   }
   .homepage #jewellery_collection .jewellery-left {
@@ -2072,6 +2429,15 @@ footer {
   .product-page .contact-booking .contact-booking-left form .form-row textarea,
   .product-page .contact-booking .contact-booking-left form .booking-btn {
     padding: 10px 20px;
+  }
+  .product-page .list-product .post-nav .under {
+    font-size: 24px;
+  }
+  .product-page .list-product .post-nav .over {
+    font-size: 20px;
+  }
+  .product-page .list-product .post-nav {
+    padding: 24px 0;
   }
 }
 @media screen and (max-width: 990px) {
@@ -2209,6 +2575,22 @@ footer {
   }
   .booking_appointment .booking-right-content .booking-form .booking-btn {
     padding: 10px 20px;
+  }
+
+  .product-page .product-describe {
+    width: 100% !important;
+  }
+  .product-page .list-product .about-us-row .about-us-img .about-us-layer {
+    display: none;
+  }
+  .product-page .list-product .sidebar .latest-col {
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+  }
+  .product-page .list-product .sidebar .latest-col .latest-row .datetime {
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 900px) {
@@ -2456,6 +2838,23 @@ footer {
     margin-bottom: 0;
     line-height: 60px;
   }
+  .product-page .list-product .post-content .post-title {
+    font-size: 36px;
+    line-height: normal;
+  }
+  .product-page .list-product .post-content .heading {
+    font-size: 24px;
+  }
+  .product-page .list-product .post-another .tag-part {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .product-page .list-product .post-comment .reply-box form .reply-btn {
+    margin-top: 0;
+  }
+  .product-page .list-product .post-content .post-text {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 500px) {
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
@@ -2549,5 +2948,21 @@ footer {
   }
   .product-page .contact-booking .contact-booking-left form .form-title {
     line-height: 50px;
+  }
+  .product-page .contact-booking .contact-booking-right .contact-text {
+    font-size: 20px;
+  }
+  .product-page .contact-booking .contact-booking-right .contact-title {
+    font-size: 30px;
+  }
+  .product-page .product-describe {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .product-page .list-product .about-us-row .about-us-content .ngau-title {
+    line-height: normal;
+  }
+  .product-page .list-product .about-us-row .about-us-content .ngau-btn {
+    margin-top: 20px;
   }
 }

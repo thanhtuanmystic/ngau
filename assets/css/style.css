@@ -1295,6 +1295,17 @@ body {
 .product-page .contact-us {
   background-image: url(../img/product/contact-us-bg.png);
 }
+.product-page .about-us {
+  background-image: url(../img/product/about-us-bg.png);
+}
+.product-page .product-describe {
+  color: var(--Backgrounds-Primary, #fff);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  width: 40%;
+}
 .product-page .product-hero {
   background-repeat: no-repeat;
   background-size: cover;
@@ -1467,6 +1478,318 @@ body {
 .product-page .list-product .product-pagination .pagination-active {
   background: var(--Neutrals-Neutrals800, #433e3f);
   color: #fff;
+}
+.product-page .list-product .about-us-row {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.product-page .list-product .about-us-row .about-us-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.product-page .list-product .about-us-row .about-us-content .ngau-title {
+  display: inline-block;
+  line-height: 90px;
+}
+.product-page .list-product .about-us-row .about-us-content .ngau-title img {
+  top: -18%;
+  right: -12%;
+}
+.product-page .list-product .about-us-row .about-us-content .product-describe {
+  color: #000;
+  width: 80%;
+  margin-top: 24px;
+}
+.product-page .list-product .about-us-row .about-us-content .ngau-btn {
+  margin-top: 40px;
+  width: 280px;
+}
+.product-page .list-product .about-us-row .about-us-img {
+  position: relative;
+}
+.product-page .list-product .about-us-row .about-us-img .about-us-layer {
+  position: absolute;
+  width: 50%;
+  bottom: -10%;
+  left: -10%;
+}
+.product-page .list-product .post-content .post-title {
+  font-size: 64px;
+  font-family: DegularDisplay-semibold;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90px;
+  background: linear-gradient(80deg, #57351e 33.59%, #000 94.27%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 26px;
+}
+.product-page .list-product .post-content .post-info {
+  color: #797979;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+.product-page .list-product .post-content .heading {
+  color: var(--Base-Base-Black, #0a0a0b);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.product-page .list-product .post-content .post-text {
+  color: var(--Base-Base-Black, #0a0a0b);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+.product-page .list-product .post-another .tag-part {
+  display: flex;
+  align-items: center;
+}
+.product-page .list-product .post-another .tag-part ul {
+  padding: 0;
+  margin: 0;
+}
+.product-page .list-product .post-another .tag-part .tag-name {
+  color: var(--Base-Base-Black, #0a0a0b);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 10%;
+}
+.product-page .list-product .post-another .tag-part .tag-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.product-page .list-product .post-another .tag-part .tag-list li {
+  border: 1px solid var(--Neutrals-Neutrals500, #898384);
+  padding: 10px 20px;
+  color: var(--Neutrals-Neutrals600, #726c6c);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.product-page .list-product .post-another .tag-part .tag-list li:hover {
+  cursor: pointer;
+}
+.product-page .list-product .post-another .tag-part .share-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.product-page .list-product .post-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  border-top: 1px solid #9f9c9c;
+  border-bottom: 1px solid #9f9c9c;
+  margin: 50px 0;
+  position: relative;
+}
+.product-page .list-product .post-nav a {
+  color: inherit;
+}
+.product-page .list-product .post-nav .over {
+  color: var(--Neutrals-Neutrals600, #726c6c);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.product-page .list-product .post-nav .under {
+  color: var(--Neutrals-Neutrals1000, #151314);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.product-page .list-product .post-nav .post-next .over {
+  text-align: right;
+}
+.product-page .list-product .post-nav .post-nav-seperate {
+  width: 1px;
+  background: var(--Neutrals-Neutrals400, #9f9c9c);
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  left: 50%;
+}
+.product-page .list-product .post-comment .comment-count {
+  color: var(--Neutrals-Neutrals1000, #151314);
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.product-page .list-product .post-comment .comment-content {
+  display: flex;
+  align-content: flex-start;
+  gap: 30px;
+}
+.product-page .list-product .post-comment .comment-content .comment-info {
+  display: flex;
+  flex-direction: column;
+}
+.product-page .list-product .post-comment .comment-content .comment-info .name {
+  color: var(--Neutrals-Neutrals1000, #151314);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.product-page .list-product .post-comment .comment-content .comment-info .datetime {
+  color: var(--Neutrals-Neutrals1000, #151314);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.product-page .list-product .post-comment .comment-content .comment-info .content {
+  color: var(--Base-Base-Black, #0a0a0b);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+.product-page .list-product .post-comment .comment-content .comment-info .reply-click {
+  color: var(--Neutrals-Neutrals1000, #151314);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: underline;
+}
+.product-page .list-product .post-comment .reply-box {
+  margin-top: 20px;
+}
+.product-page .list-product .post-comment .reply-box .comment-sub-heading {
+  color: var(--Neutrals-Neutrals700, #5a5555);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+.product-page .list-product .post-comment .reply-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.product-page .list-product .post-comment .reply-box form .form-row {
+  width: 100%;
+}
+.product-page .list-product .post-comment .reply-box form .form-row textarea,
+.product-page .list-product .post-comment .reply-box form .form-row input {
+  background: #fff9f2;
+  padding: 18px 30px;
+}
+.product-page .list-product .post-comment .reply-box form .reply-btn {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #0a0a0b;
+  color: var(--Neutrals-Base-White, #fafafa);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 40px;
+}
+.product-page .list-product .sidebar ul {
+  padding: 0;
+  margin: 0;
+}
+.product-page .list-product .sidebar .lastest-title {
+  color: var(--Neutrals-Neutrals1000, #151314);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.product-page .list-product .sidebar .latest-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #9f9c9c;
+}
+.product-page .list-product .sidebar .latest-col .latest-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.product-page .list-product .sidebar .latest-col .latest-row .datetime {
+  color: #797979;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.product-page .list-product .sidebar .latest-col .latest-row .post-the-title {
+  color: var(--Base-Base-Black, #0a0a0b);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.product-page .list-product .sidebar .border-bottom {
+  border-bottom: 1px solid #9f9c9c !important;
+}
+.product-page .list-product .sidebar .social {
+  padding: 40px 0;
+}
+.product-page .list-product .sidebar .social .title {
+  color: var(--Neutrals-Neutrals1000, #151314);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.product-page .list-product .sidebar .social .social-list {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+.product-page .list-product .sidebar .social .tag-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.product-page .list-product .sidebar .social .tag-list li {
+  border: 1px solid var(--Neutrals-Neutrals500, #898384);
+  padding: 10px 20px;
+  color: var(--Neutrals-Neutrals600, #726c6c);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.product-page .list-product .sidebar .social .tag-list li:hover {
+  cursor: pointer;
 }
 .product-page .contact-booking {
   padding: 50px 0;
@@ -1854,6 +2177,24 @@ footer .copyright {
     font-size: 80px;
     margin-bottom: 20px;
   }
+  .about-us-content .ngau-title .seperate {
+    display: none;
+  }
+  .product-page .list-product .about-us-row .about-us-content .ngau-title img {
+    top: -26%;
+    right: -15%;
+  }
+  .product-page .list-product .about-us-row .about-us-content .product-describe {
+    margin-top: 0;
+  }
+  .product-page .list-product .sidebar .latest-col .latest-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .product-page .list-product .post-content .post-title {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 1200px) {
   .homepage #expert_craftspeople .expert_craftspeople-content .ngau-btn {
@@ -1874,7 +2215,8 @@ footer .copyright {
   .booking-content-left img {
     display: none;
   }
-  .ngau-title img, .form-title img {
+  .ngau-title img,
+  .form-title img {
     display: none;
   }
   .homepage #jewellery_collection .jewellery-left {
@@ -1939,6 +2281,15 @@ footer .copyright {
   .product-page .contact-booking .contact-booking-left form .form-row textarea,
   .product-page .contact-booking .contact-booking-left form .booking-btn {
     padding: 10px 20px;
+  }
+  .product-page .list-product .post-nav .under {
+    font-size: 24px;
+  }
+  .product-page .list-product .post-nav .over {
+    font-size: 20px;
+  }
+  .product-page .list-product .post-nav {
+    padding: 24px 0;
   }
 }
 @media screen and (max-width: 990px) {
@@ -2052,6 +2403,21 @@ footer .copyright {
   }
   .booking_appointment .booking-right-content .booking-form .booking-btn {
     padding: 10px 20px;
+  }
+  .product-page .product-describe {
+    width: 100% !important;
+  }
+  .product-page .list-product .about-us-row .about-us-img .about-us-layer {
+    display: none;
+  }
+  .product-page .list-product .sidebar .latest-col {
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+  }
+  .product-page .list-product .sidebar .latest-col .latest-row .datetime {
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 900px) {
@@ -2259,6 +2625,23 @@ footer .copyright {
     margin-bottom: 0;
     line-height: 60px;
   }
+  .product-page .list-product .post-content .post-title {
+    font-size: 36px;
+    line-height: normal;
+  }
+  .product-page .list-product .post-content .heading {
+    font-size: 24px;
+  }
+  .product-page .list-product .post-another .tag-part {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .product-page .list-product .post-comment .reply-box form .reply-btn {
+    margin-top: 0;
+  }
+  .product-page .list-product .post-content .post-text {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 500px) {
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos1 {
@@ -2348,6 +2731,22 @@ footer .copyright {
   }
   .product-page .contact-booking .contact-booking-left form .form-title {
     line-height: 50px;
+  }
+  .product-page .contact-booking .contact-booking-right .contact-text {
+    font-size: 20px;
+  }
+  .product-page .contact-booking .contact-booking-right .contact-title {
+    font-size: 30px;
+  }
+  .product-page .product-describe {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .product-page .list-product .about-us-row .about-us-content .ngau-title {
+    line-height: normal;
+  }
+  .product-page .list-product .about-us-row .about-us-content .ngau-btn {
+    margin-top: 20px;
   }
 }
 

@@ -1495,6 +1495,12 @@ body {
         }
       }
     }
+    .gemstory {
+      img {
+        right: -10%;
+        top: -10%;
+      }
+    }
     .gemstone-stories-box {
       position: relative;
       &:hover {
@@ -2332,6 +2338,10 @@ footer {
   .product-page .list-product .post-content .post-title {
     font-size: 50px;
     margin-bottom: 0;
+  }
+  .product-page .list-product .gemstory img {
+    right: -20%;
+    top: -50%;
   }
 }
 

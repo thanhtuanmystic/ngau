@@ -1426,6 +1426,10 @@ body {
   font-weight: 400;
   line-height: normal;
 }
+.product-page .list-product .gemstory img {
+  right: -10%;
+  top: -10%;
+}
 .product-page .list-product .gemstone-stories-box {
   position: relative;
 }
@@ -2194,6 +2198,10 @@ footer .copyright {
   .product-page .list-product .post-content .post-title {
     font-size: 50px;
     margin-bottom: 0;
+  }
+  .product-page .list-product .gemstory img {
+    right: -20%;
+    top: -50%;
   }
 }
 @media screen and (max-width: 1200px) {

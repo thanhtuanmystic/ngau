@@ -595,98 +595,6 @@ body {
 .homepage #exclusive_offer .col-right .ngau-btn {
   margin-top: auto;
 }
-.homepage #loose_gemstone {
-  padding-top: 20px;
-  padding-bottom: 100px;
-  background: #fff9f2;
-  overflow: hidden;
-}
-.homepage #loose_gemstone .loose_gemstone-slider {
-  position: relative;
-  padding-right: 0;
-}
-.homepage #loose_gemstone .loose_gemstone-slider .swiper-scrollbar {
-  bottom: -8%;
-}
-.homepage #loose_gemstone .loose_gemstone-slider .loose-gemstone-box {
-  position: relative;
-}
-.homepage #loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info {
-  position: absolute;
-  bottom: 2%;
-  left: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.homepage #loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 25px;
-}
-.homepage #loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-row .product-name {
-  color: var(--Neutrals-Neutrals800, #433e3f);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  font-family: DegularDisplay-semibold;
-}
-.homepage #loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-price {
-  display: flex;
-  gap: 10px;
-  padding: 0 25px;
-}
-.homepage #loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-price .old-price {
-  color: var(--Neutrals-Neutrals400, #9f9c9c);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: line-through;
-}
-.homepage #loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-price .current-price {
-  color: var(--Neutrals-Neutrals900, #2b2829);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.homepage #loose_gemstone .loose_gemstone-slider .arrow-next-lg,
-.homepage #loose_gemstone .loose_gemstone-slider .arrow-prev-lg {
-  position: absolute;
-  z-index: 2;
-}
-.homepage #loose_gemstone .loose_gemstone-slider .arrow-next-lg:hover,
-.homepage #loose_gemstone .loose_gemstone-slider .arrow-prev-lg:hover {
-  opacity: 0.8;
-  cursor: pointer;
-}
-.homepage #loose_gemstone .loose_gemstone-slider .arrow-next-lg {
-  right: 0;
-  top: 46%;
-}
-.homepage #loose_gemstone .loose_gemstone-slider .arrow-prev-lg {
-  left: 0;
-  top: 46%;
-}
-.homepage #loose_gemstone .ngau-title-row {
-  margin-bottom: 46px;
-}
-.homepage #loose_gemstone .ngau-title-row .ngau-title img {
-  right: -10%;
-}
-.homepage #loose_gemstone .ngau-title-row .ngau-title-row-right {
-  width: 48%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 18px;
-}
-.homepage #loose_gemstone .ngau-title-row .ngau-title-row-right .ngau-btn {
-  width: 40%;
-}
 .homepage #miidle_banner {
   background-image: url(../img/middle-banner.png);
   background-repeat: no-repeat;
@@ -1194,6 +1102,114 @@ body {
   font-weight: 400;
   line-height: normal;
 }
+#loose_gemstone {
+  padding-top: 20px;
+  padding-bottom: 100px;
+  background: #fff9f2;
+  overflow: hidden;
+}
+#loose_gemstone .loose_gemstone-slider,
+#loose_gemstone .related-product-slider {
+  position: relative;
+  padding-right: 0;
+}
+#loose_gemstone .loose_gemstone-slider .swiper-scrollbar,
+#loose_gemstone .related-product-slider .swiper-scrollbar {
+  bottom: -8%;
+}
+#loose_gemstone .loose_gemstone-slider .loose-gemstone-box,
+#loose_gemstone .related-product-slider .loose-gemstone-box {
+  position: relative;
+}
+#loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info,
+#loose_gemstone .related-product-slider .loose-gemstone-box .product-info {
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-row,
+#loose_gemstone .related-product-slider .loose-gemstone-box .product-info .product-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+#loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-row .product-name,
+#loose_gemstone .related-product-slider .loose-gemstone-box .product-info .product-info-row .product-name {
+  color: var(--Neutrals-Neutrals800, #433e3f);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-family: DegularDisplay-semibold;
+}
+#loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-price,
+#loose_gemstone .related-product-slider .loose-gemstone-box .product-info .product-info-price {
+  display: flex;
+  gap: 10px;
+  padding: 0 25px;
+}
+#loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-price .old-price,
+#loose_gemstone .related-product-slider .loose-gemstone-box .product-info .product-info-price .old-price {
+  color: var(--Neutrals-Neutrals400, #9f9c9c);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: line-through;
+}
+#loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-price .current-price,
+#loose_gemstone .related-product-slider .loose-gemstone-box .product-info .product-info-price .current-price {
+  color: var(--Neutrals-Neutrals900, #2b2829);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#loose_gemstone .loose_gemstone-slider .arrow-next-lg,
+#loose_gemstone .loose_gemstone-slider .arrow-prev-lg,
+#loose_gemstone .related-product-slider .arrow-next-lg,
+#loose_gemstone .related-product-slider .arrow-prev-lg {
+  position: absolute;
+  z-index: 2;
+}
+#loose_gemstone .loose_gemstone-slider .arrow-next-lg:hover,
+#loose_gemstone .loose_gemstone-slider .arrow-prev-lg:hover,
+#loose_gemstone .related-product-slider .arrow-next-lg:hover,
+#loose_gemstone .related-product-slider .arrow-prev-lg:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+#loose_gemstone .loose_gemstone-slider .arrow-next-lg,
+#loose_gemstone .related-product-slider .arrow-next-lg {
+  right: 0;
+  top: 46%;
+}
+#loose_gemstone .loose_gemstone-slider .arrow-prev-lg,
+#loose_gemstone .related-product-slider .arrow-prev-lg {
+  left: 0;
+  top: 46%;
+}
+#loose_gemstone .ngau-title-row {
+  margin-bottom: 46px;
+}
+#loose_gemstone .ngau-title-row .ngau-title img {
+  right: -10%;
+}
+#loose_gemstone .ngau-title-row .ngau-title-row-right {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 18px;
+}
+#loose_gemstone .ngau-title-row .ngau-title-row-right .ngau-btn {
+  width: 40%;
+}
+
 #service {
   background: #fff9f2;
 }
@@ -1210,6 +1226,7 @@ body {
   line-height: normal;
   text-transform: uppercase;
   margin-top: 20px;
+  font-family: DegularDisplay-semibold;
 }
 #service .serive-box .serivce-des {
   color: var(--Neutrals-Neutrals700, #5a5555);
@@ -1795,6 +1812,121 @@ body {
 .product-page .list-product .sidebar .social .tag-list li:hover {
   cursor: pointer;
 }
+.product-page .product-detail {
+  background: #fff9f2;
+}
+.product-page .product-detail .product-imgs {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+.product-page .product-detail .img-display {
+  overflow: hidden;
+  position: relative;
+}
+.product-page .product-detail .img-display .product-detail-nav-icon-next,
+.product-page .product-detail .img-display .product-detail-nav-icon-prev {
+  position: absolute;
+  z-index: 1;
+}
+.product-page .product-detail .img-display .product-detail-nav-icon-next:hover,
+.product-page .product-detail .img-display .product-detail-nav-icon-prev:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.product-page .product-detail .img-display .product-detail-nav-icon-prev {
+  left: 0;
+  top: 50%;
+}
+.product-page .product-detail .img-display .product-detail-nav-icon-next {
+  right: 0;
+  top: 50%;
+}
+.product-page .product-detail .img-showcase {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease;
+  height: 100%;
+}
+.product-page .product-detail .img-showcase img {
+  min-width: 100%;
+}
+.product-page .product-detail .img-select {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.product-page .product-detail .img-item:hover {
+  opacity: 0.8;
+}
+.product-page .product-detail .product-detail-info .product-name {
+  font-size: 64px;
+  font-style: normal;
+  font-family: DegularDisplay-semibold;
+  font-weight: 500;
+  line-height: 90px; /* 140.625% */
+  background: linear-gradient(80deg, #57351e 33.59%, #000 94.27%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.product-page .product-detail .product-detail-info .product-short-des {
+  color: var(--Neutrals-Neutrals900, #2b2829);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.product-page .product-detail .product-detail-info .product-price {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 30px 0;
+}
+.product-page .product-detail .product-detail-info .product-price .old-price {
+  color: var(--Neutrals-Neutrals400, #9f9c9c);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: line-through;
+}
+.product-page .product-detail .product-detail-info .product-price .current-price {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-family: DegularDisplay-semibold;
+}
+.product-page .product-detail .product-detail-info .product-ingredient {
+  border-radius: 10px;
+  background: var(--Backgrounds-Primary, #fff);
+  padding: 26px 35px;
+  margin-bottom: 50px;
+}
+.product-page .product-detail .product-detail-info .product-ingredient .product-ingredient-row {
+  color: var(--Neutrals-Neutrals900, #2b2829);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-family: DegularDisplay-semibold;
+}
+.product-page .product-detail .product-detail-info .product-ingredient .product-ingredient-row span {
+  font-weight: 400;
+  opacity: 0.8;
+}
+.product-page .product-detail .product-detail-info .ngau-btn {
+  color: var(--Neutrals-Base-Black, #0a0a0b);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 5px;
+  padding: 10px;
+  background: var(--Gradient-3, linear-gradient(265deg, #c9fffd -1.27%, #c0e6ff 55.44%, #e484b6 112.15%));
+}
 .product-page .contact-booking {
   padding: 50px 0;
   background: #fff9f2;
@@ -2056,6 +2188,14 @@ footer .copyright {
   .product-page .contact-booking .contact-booking-right .contact-title {
     font-size: 50px;
   }
+  .product-page .product-detail .product-detail-info .product-name {
+    font-size: 46px;
+    margin-bottom: 0;
+  }
+  .product-page .product-detail .product-detail-info .product-price .old-price,
+  .product-page .product-detail .product-detail-info .product-price .current-price {
+    font-size: 38px;
+  }
 }
 @media screen and (max-width: 1400px) {
   .container-fluid {
@@ -2089,7 +2229,7 @@ footer .copyright {
   .ngau-title-row {
     align-items: flex-start;
   }
-  .homepage #loose_gemstone {
+  #loose_gemstone {
     padding-bottom: 50px;
   }
   .homepage #miidle_banner {
@@ -2131,7 +2271,7 @@ footer .copyright {
   .homepage #testimoninals {
     padding: 0 0 50px 0;
   }
-  .homepage #loose_gemstone .ngau-title-row .ngau-title img {
+  #loose_gemstone .ngau-title-row .ngau-title img {
     top: -40%;
     right: -20%;
   }
@@ -2203,12 +2343,24 @@ footer .copyright {
     right: -20%;
     top: -50%;
   }
+  .product-page .product-detail .product-detail-info .product-name {
+    font-size: 36px;
+  }
+  .product-page .product-detail .product-detail-info .product-short-des {
+    font-size: 20px;
+  }
+  .product-page .product-detail .product-detail-info .product-price {
+    margin: 10px 0;
+  }
+  .product-page .product-detail .product-detail-info .product-ingredient {
+    margin-bottom: 26px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .homepage #expert_craftspeople .expert_craftspeople-content .ngau-btn {
     width: 50%;
   }
-  .homepage #loose_gemstone .ngau-title-row .ngau-title-row-right {
+  #loose_gemstone .ngau-title-row .ngau-title-row-right {
     width: 60%;
   }
   .homepage #jewellery_collection .jewellery-left .ngau-sub-title {
@@ -2299,6 +2451,26 @@ footer .copyright {
   .product-page .list-product .post-nav {
     padding: 24px 0;
   }
+  .product-page .product-detail .product-detail-info .product-name {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .product-page .product-detail .product-detail-info .product-price .old-price,
+  .product-page .product-detail .product-detail-info .product-price .current-price {
+    font-size: 26px;
+  }
+  .product-page .product-detail .product-detail-info .product-short-des {
+    font-size: 18px;
+  }
+  .product-page .product-detail .product-detail-info .product-ingredient .product-ingredient-row {
+    font-size: 18px;
+  }
+  .product-page .product-detail .product-detail-info .product-ingredient {
+    padding: 20px;
+  }
+  .product-page .list-product {
+    padding: 30px 0;
+  }
 }
 @media screen and (max-width: 990px) {
   .homepage #hero .saleoff-header {
@@ -2315,14 +2487,14 @@ footer .copyright {
   #exclusive_offer .ngau-sub-title {
     margin-bottom: 10px;
   }
-  .homepage #loose_gemstone .ngau-title-row {
+  #loose_gemstone .ngau-title-row {
     flex-wrap: wrap;
   }
-  .homepage #loose_gemstone .ngau-title-row .ngau-title-row-right {
+  #loose_gemstone .ngau-title-row .ngau-title-row-right {
     width: 100%;
     align-items: flex-start;
   }
-  .homepage #loose_gemstone {
+  #loose_gemstone {
     padding-top: 0;
   }
   .homepage #miidle_banner {
@@ -2427,6 +2599,16 @@ footer .copyright {
   .product-page .list-product .sidebar .latest-col .latest-row .datetime {
     margin-bottom: 0;
   }
+  .product-page .product-detail .product-detail-info .product-name {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .product-page .product-detail .product-detail-info .product-short-des {
+    font-size: 14px;
+  }
+  .product-page .product-detail .product-detail-info .product-ingredient {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 900px) {
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos1 {
@@ -2496,7 +2678,7 @@ footer .copyright {
   .ngau-title-row .ngau-subtitle-in-row {
     font-size: 24px;
   }
-  .homepage #loose_gemstone .ngau-title-row .ngau-title-row-right {
+  #loose_gemstone .ngau-title-row .ngau-title-row-right {
     gap: 10px;
   }
   .homepage #miidle_banner .slogan {
@@ -2533,6 +2715,12 @@ footer .copyright {
   .product-page .product-hero .product-name {
     font-size: 40px;
   }
+  .product-page .product-detail .product-imgs {
+    flex-direction: column-reverse;
+  }
+  .product-page .product-detail .img-select {
+    flex-direction: row;
+  }
 }
 @media screen and (max-width: 700px) {
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos1 {
@@ -2567,7 +2755,7 @@ footer .copyright {
   .homepage #asian_fengshui_decoration .ngau-btn {
     width: 50%;
   }
-  .homepage #loose_gemstone .ngau-title-row .ngau-title-row-right .ngau-btn {
+  #loose_gemstone .ngau-title-row .ngau-title-row-right .ngau-btn {
     width: 50%;
   }
   .homepage #miidle_banner {

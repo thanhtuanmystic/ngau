@@ -114,6 +114,48 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".related-product-slider", {
+    spaceBetween: 30,
+    loop: true,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      hide: false,
+      draggable: true,
+    },
+    slidesPerView: calculateSlidesPerView(),
+  });
+
+  function calculateSlidesPerView() {
+    const windowWidth = window.innerWidth;
+    if (windowWidth >= 1200) {
+      return 4.5;
+    } else if (windowWidth >= 990) {
+      return 3.5;
+    } else if (windowWidth >= 768) {
+      return 2.5;
+    } else if (windowWidth >= 450) {
+      return 2;
+    } else {
+      return 1.5;
+    }
+  }
+  window.addEventListener("resize", function () {
+    swiper.params.slidesPerView = calculateSlidesPerView();
+    swiper.update(); // Cập nhật Swiper
+  });
+  document
+    .querySelector(".arrow-prev-lg")
+    .addEventListener("click", function () {
+      swiper.slidePrev();
+    });
+  document
+    .querySelector(".arrow-next-lg")
+    .addEventListener("click", function () {
+      swiper.slideNext();
+    });
+});
+
 // JS Jewellery collection
 $("#demo").RollingSlider({
   showArea: "#example",
@@ -143,3 +185,43 @@ $(document).on("ready", function () {
     ],
   });
 });
+
+// Product detail
+const imgs = document.querySelectorAll(".img-select a");
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) => {
+  imgItem.addEventListener("click", (event) => {
+    event.preventDefault();
+    imgId = imgItem.dataset.id;
+    slideImage();
+  });
+});
+const nextBtn = document.querySelector(".product-detail-nav-icon-next");
+const prevBtn = document.querySelector(".product-detail-nav-icon-prev");
+
+nextBtn.addEventListener("click", () => {
+  if (imgId < imgBtns.length) {
+    imgId++;
+    slideImage();
+  }
+});
+
+prevBtn.addEventListener("click", () => {
+  if (imgId > 1) {
+    imgId--;
+    slideImage();
+  }
+});
+function slideImage() {
+  const displayWidth = document.querySelector(
+    ".img-showcase img:first-child"
+  ).clientWidth;
+
+  document.querySelector(".img-showcase").style.transform = `translateX(${
+    -(imgId - 1) * displayWidth
+  }px)`;
+}
+
+window.addEventListener("resize", slideImage);

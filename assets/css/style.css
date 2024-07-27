@@ -772,40 +772,30 @@ body {
 }
 .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos1 {
   display: block;
-  width: 200px;
-  height: 236px;
   top: 0;
   left: 0;
   z-index: 1;
 }
 .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos2 {
   display: block;
-  width: 220px;
-  height: 286px;
   top: 35px;
   left: 14%;
   z-index: 2;
 }
 .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos3 {
   display: block;
-  width: 300px;
-  height: 390px;
   top: 15%;
   left: 35%;
   z-index: 3;
 }
 .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos4 {
   display: block;
-  width: 220px;
-  height: 286px;
   top: 35px;
   right: -14%;
   z-index: 2;
 }
 .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos5 {
   display: block;
-  width: 200px;
-  height: 236px;
   top: 0;
   right: -25%;
   z-index: 1;
@@ -2254,7 +2244,7 @@ footer .copyright {
 }
 @media screen and (min-width: 1600px) {
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap {
-    width: 700px;
+    width: 900px;
   }
   .homepage #jewellery_collection .jewellery-slider-box {
     justify-content: left;
@@ -2263,22 +2253,33 @@ footer .copyright {
     left: 5%;
   }
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos2 {
-    left: 18%;
+    left: 14%;
+    top: 14%;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos3 {
+    top: 24%;
+    left: 34%;
   }
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos4 {
-    right: 4%;
+    right: 14%;
+    top: 14%;
   }
   .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos5 {
-    right: -10%;
+    right: 5%;
   }
   .homepage #jewellery_collection .jewellery-slider-box .prev {
     left: 3% !important;
+    top: 33%;
   }
   .homepage #jewellery_collection .jewellery-slider-box .next {
-    right: -12% !important;
+    right: 3% !important;
+    top: 33%;
   }
   .homepage #expert_craftspeople .expert_craftspeople-content .ngau-title img {
     right: 60%;
+  }
+  .homepage #jewellery_collection .jewellery-left .ngau-sub-title {
+    width: 80%;
   }
 }
 @media screen and (max-width: 1600px) {
@@ -2321,6 +2322,26 @@ footer .copyright {
   }
   .homepage #exclusive_offer .col-right .ngau-title img {
     right: 0;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos1 {
+    width: 200px;
+    height: 236px;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos2 {
+    width: 220px;
+    height: 286px;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos3 {
+    width: 300px;
+    height: 390px;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos4 {
+    width: 220px;
+    height: 286px;
+  }
+  .homepage #jewellery_collection .jewellery-slider-box .slide-wrap .pos5 {
+    width: 200px;
+    height: 236px;
   }
 }
 @media screen and (max-width: 1400px) {

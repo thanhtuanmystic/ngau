@@ -523,10 +523,39 @@ body {
 .homepage #exclusive_offer .col-left .swiper-slide {
   position: relative;
 }
+.homepage #exclusive_offer .col-left .swiper-slide img {
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+}
+.homepage #exclusive_offer .col-left .swiper-slide .product-img1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.homepage #exclusive_offer .col-left .swiper-slide .product-img2 {
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.homepage #exclusive_offer .col-left .swiper-slide:hover {
+  cursor: pointer;
+}
+.homepage #exclusive_offer .col-left .swiper-slide:hover .product-img1 {
+  position: relative;
+  opacity: 0;
+}
+.homepage #exclusive_offer .col-left .swiper-slide:hover .product-img2 {
+  position: absolute;
+  opacity: 1;
+}
 .homepage #exclusive_offer .col-left .swiper-slide .product-info {
   position: absolute;
   bottom: 2%;
   left: 4%;
+  z-index: 3;
 }
 .homepage #exclusive_offer .col-left .swiper-slide .product-info .product-name {
   color: var(--Base-Base-White, #fafafa);
@@ -874,6 +903,34 @@ body {
 .homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box {
   position: relative;
 }
+.homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box img {
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+}
+.homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box .product-img1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box .product-img2 {
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box:hover {
+  cursor: pointer;
+}
+.homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box:hover .product-img1 {
+  position: relative;
+  opacity: 0;
+}
+.homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box:hover .product-img2 {
+  position: absolute;
+  opacity: 1;
+}
 .homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box .product-info {
   position: absolute;
   bottom: 2%;
@@ -881,6 +938,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  z-index: 3;
 }
 .homepage #asian_fengshui_decoration .asian_fengshui_decoration-slider .fengshui-box .product-info .product-info-row {
   display: flex;
@@ -1122,6 +1180,40 @@ body {
 #loose_gemstone .related-product-slider .loose-gemstone-box {
   position: relative;
 }
+#loose_gemstone .loose_gemstone-slider .loose-gemstone-box img,
+#loose_gemstone .related-product-slider .loose-gemstone-box img {
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+}
+#loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-img1,
+#loose_gemstone .related-product-slider .loose-gemstone-box .product-img1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-img2,
+#loose_gemstone .related-product-slider .loose-gemstone-box .product-img2 {
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+#loose_gemstone .loose_gemstone-slider .loose-gemstone-box:hover,
+#loose_gemstone .related-product-slider .loose-gemstone-box:hover {
+  cursor: pointer;
+}
+#loose_gemstone .loose_gemstone-slider .loose-gemstone-box:hover .product-img1,
+#loose_gemstone .related-product-slider .loose-gemstone-box:hover .product-img1 {
+  position: relative;
+  opacity: 0;
+}
+#loose_gemstone .loose_gemstone-slider .loose-gemstone-box:hover .product-img2,
+#loose_gemstone .related-product-slider .loose-gemstone-box:hover .product-img2 {
+  position: absolute;
+  opacity: 1;
+}
 #loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info,
 #loose_gemstone .related-product-slider .loose-gemstone-box .product-info {
   position: absolute;
@@ -1130,6 +1222,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  z-index: 3;
 }
 #loose_gemstone .loose_gemstone-slider .loose-gemstone-box .product-info .product-info-row,
 #loose_gemstone .related-product-slider .loose-gemstone-box .product-info .product-info-row {
@@ -1397,6 +1490,34 @@ body {
 .product-page .list-product .product-box {
   position: relative;
 }
+.product-page .list-product .product-box img {
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+}
+.product-page .list-product .product-box .product-img1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.product-page .list-product .product-box .product-img2 {
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.product-page .list-product .product-box:hover {
+  cursor: pointer;
+}
+.product-page .list-product .product-box:hover .product-img1 {
+  position: relative;
+  opacity: 0;
+}
+.product-page .list-product .product-box:hover .product-img2 {
+  position: absolute;
+  opacity: 1;
+}
 .product-page .list-product .product-box .product-info {
   position: absolute;
   bottom: 2%;
@@ -1404,6 +1525,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  z-index: 3;
 }
 .product-page .list-product .product-box .product-info .product-info-row {
   display: flex;

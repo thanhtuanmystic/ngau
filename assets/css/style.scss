@@ -521,12 +521,42 @@ body {
     background: #fff9f2;
     .col-left {
       position: relative;
+      
       .swiper-slide {
         position: relative;
+        img {
+          transition: opacity 0.3s ease-in-out;
+          -webkit-transition: opacity 0.3s ease-in-out;
+          -moz-transition: opacity 0.3s ease-in-out;
+          -ms-transition: opacity 0.3s ease-in-out;
+          -o-transition: opacity 0.3s ease-in-out;
+        }
+        .product-img1 {
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        .product-img2 {
+          left: 0;
+          top: 0;
+          opacity: 0;
+        }
+        &:hover {
+          cursor: pointer;
+          .product-img1 {
+            position: relative;
+            opacity: 0;
+          }
+          .product-img2 {
+            position: absolute;
+            opacity: 1;
+          }
+        }
         .product-info {
           position: absolute;
           bottom: 2%;
           left: 4%;
+          z-index: 3;
           .product-name {
             color: var(--Base-Base-White, #fafafa);
             font-size: 40px;
@@ -608,7 +638,6 @@ body {
       }
     }
   }
-
   #miidle_banner {
     background-image: url(../img/middle-banner.png);
     background-repeat: no-repeat;
@@ -907,6 +936,34 @@ body {
       }
       .fengshui-box {
         position: relative;
+        img {
+          transition: opacity 0.3s ease-in-out;
+          -webkit-transition: opacity 0.3s ease-in-out;
+          -moz-transition: opacity 0.3s ease-in-out;
+          -ms-transition: opacity 0.3s ease-in-out;
+          -o-transition: opacity 0.3s ease-in-out;
+        }
+        .product-img1 {
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        .product-img2 {
+          left: 0;
+          top: 0;
+          opacity: 0;
+        }
+        &:hover {
+          cursor: pointer;
+          .product-img1 {
+            position: relative;
+            opacity: 0;
+          }
+          .product-img2 {
+            position: absolute;
+            opacity: 1;
+          }
+        }
         .product-info {
           position: absolute;
           bottom: 2%;
@@ -914,6 +971,7 @@ body {
           width: 100%;
           display: flex;
           flex-direction: column;
+          z-index: 3;
           .product-info-row {
             display: flex;
             align-items: center;
@@ -1039,7 +1097,6 @@ body {
       margin-top: 60px;
     }
   }
-
   #testimoninals {
     background: #fff9f2;
     padding: 80px 0;
@@ -1154,7 +1211,6 @@ body {
       }
     }
   }
-
   #banner_bottom {
   }
 }
@@ -1164,22 +1220,43 @@ body {
   padding-bottom: 100px;
   background: #fff9f2;
   overflow: hidden;
-  .swiper-container {
-    // height: 380px;
-  }
-
   .loose_gemstone-slider,
   .related-product-slider {
     position: relative;
     padding-right: 0;
-    .swiper-container {
-    }
     .swiper-scrollbar {
       bottom: -8%;
     }
-
     .loose-gemstone-box {
       position: relative;
+      img {
+        transition: opacity 0.3s ease-in-out;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -ms-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+      }
+      .product-img1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .product-img2 {
+        left: 0;
+        top: 0;
+        opacity: 0;
+      }
+      &:hover {
+        cursor: pointer;
+        .product-img1 {
+          position: relative;
+          opacity: 0;
+        }
+        .product-img2 {
+          position: absolute;
+          opacity: 1;
+        }
+      }
       .product-info {
         position: absolute;
         bottom: 2%;
@@ -1187,6 +1264,8 @@ body {
         width: 100%;
         display: flex;
         flex-direction: column;
+        z-index: 3;
+
         .product-info-row {
           display: flex;
           align-items: center;
@@ -1452,6 +1531,34 @@ body {
     }
     .product-box {
       position: relative;
+      img {
+        transition: opacity 0.3s ease-in-out;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -ms-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+      }
+      .product-img1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .product-img2 {
+        left: 0;
+        top: 0;
+        opacity: 0;
+      }
+      &:hover {
+        cursor: pointer;
+        .product-img1 {
+          position: relative;
+          opacity: 0;
+        }
+        .product-img2 {
+          position: absolute;
+          opacity: 1;
+        }
+      }
       .product-info {
         position: absolute;
         bottom: 2%;
@@ -1459,6 +1566,7 @@ body {
         width: 100%;
         display: flex;
         flex-direction: column;
+        z-index: 3;
         .product-info-row {
           display: flex;
           align-items: center;

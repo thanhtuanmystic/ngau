@@ -585,12 +585,13 @@ body {
   justify-content: space-between;
 }
 .homepage #exclusive_offer .col-right .ngau-title {
+  display: inline-block;
   margin-bottom: 10px;
   line-height: 100px;
 }
 .homepage #exclusive_offer .col-right .ngau-title img {
-  top: 0;
-  right: -110%;
+  top: -10%;
+  right: 20%;
 }
 .homepage #exclusive_offer .col-right .ngau-btn {
   margin-top: auto;
@@ -2196,6 +2197,9 @@ footer .copyright {
   .product-page .product-detail .product-detail-info .product-price .current-price {
     font-size: 38px;
   }
+  .homepage #exclusive_offer .col-right .ngau-title img {
+    right: 0;
+  }
 }
 @media screen and (max-width: 1400px) {
   .container-fluid {
@@ -2302,7 +2306,7 @@ footer .copyright {
     right: -49% !important;
   }
   .homepage #exclusive_offer .col-right .ngau-title img {
-    top: -52%;
+    top: -14%;
     right: -24%;
   }
   .hero-content-right .product-info .product-name {

@@ -595,11 +595,12 @@ body {
       flex-direction: column;
       justify-content: space-between;
       .ngau-title {
+        display: inline-block;
         margin-bottom: 10px;
         line-height: 100px;
         img {
-          top: 0;
-          right: -110%;
+          top: -10%;
+          right: 20%;
         }
       }
       .ngau-btn {
@@ -2303,6 +2304,9 @@ footer {
     .current-price {
     font-size: 38px;
   }
+  .homepage #exclusive_offer .col-right .ngau-title img {
+    right: 0;
+  }
 }
 @media screen and (max-width: 1400px) {
   .container-fluid {
@@ -2432,7 +2436,7 @@ footer {
     }
   }
   .homepage #exclusive_offer .col-right .ngau-title img {
-    top: -52%;
+    top: -14%;
     right: -24%;
   }
   .hero-content-right {

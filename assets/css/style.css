@@ -452,7 +452,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .homepage #hero .hero-content-left .sale-percent span {
-  font-weight: 500;
+  font-family: DegularDisplay-semibold;
 }
 .homepage #hero .hero-content-left .header-btn {
   display: inline-flex;

@@ -873,7 +873,8 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        border-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
         position: relative;
         z-index: 2;
       }
@@ -2818,6 +2819,13 @@ footer {
   .homepage #expert_craftspeople .expert_craftspeople-content .ngau-sub-title {
     margin: 10px 0;
   }
+  .homepage #expert_craftspeople .expert_craftspeople-content .expert-left {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
   .homepage #asian_fengshui_decoration .ngau-btn {
     width: 30%;
   }
@@ -3274,7 +3282,7 @@ footer {
   .product-page .list-product .over-list-product {
     flex-direction: column;
     gap: 10px;
-    align-items: flex-end;
+    align-items: flex-start;
     img {
       bottom: 12%;
     }

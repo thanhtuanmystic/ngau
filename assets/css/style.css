@@ -354,8 +354,58 @@ nav .navbar .links li:hover .js-sub-menu {
   }
 }
 @media (max-width: 500px) {
-  .navbar .logo .hide-on-mobile {
-    display: none;
+  .navbar .search-box {
+    position: relative;
+    width: auto !important;
+  }
+  .navbar .search-box i {
+    position: relative !important;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .navbar .search-box .input-box {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    height: 60px;
+    width: 300px;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+  }
+  .navbar.showInput .search-box .input-box {
+    top: 30px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .search-box .input-box::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: 10px;
+    top: -6px;
+    transform: rotate(45deg);
+  }
+  .search-box .input-box input {
+    position: absolute;
+    top: 80%;
+    left: 52%;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    height: 35px;
+    width: 280px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 16px;
+    border: none;
   }
   body {
     padding-top: 56px !important;
@@ -848,6 +898,10 @@ body {
   border-bottom-left-radius: 20px;
   position: relative;
   z-index: 2;
+}
+.homepage #expert_craftspeople .expert_craftspeople-content .ec-right-img {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .homepage #expert_craftspeople .expert_craftspeople-content .ngau-title {
   line-height: 100px;
@@ -1448,10 +1502,6 @@ body {
   margin-bottom: 40px;
   position: relative;
 }
-.product-page .list-product .over-list-product img {
-  position: absolute;
-  right: 1%;
-}
 .product-page .list-product .over-list-product .breadcrumb {
   margin-bottom: 0;
   color: var(--Neutrals-Neutrals600, #726c6c);
@@ -1465,7 +1515,15 @@ body {
   font-family: DegularDisplay-semibold;
   margin-left: 6px;
 }
-.product-page .list-product .over-list-product select {
+.product-page .list-product .over-list-product .select-wrap {
+  position: relative;
+}
+.product-page .list-product .over-list-product .select-wrap img {
+  position: absolute;
+  right: 5%;
+  bottom: 22%;
+}
+.product-page .list-product .over-list-product .select-wrap select {
   background: #fff9f2;
   border-radius: 5px;
   border: 1px solid var(--Neutrals-Neutrals500, #898384);
@@ -1618,6 +1676,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+.product-page .list-product .about-us-row .odd-row {
+  flex-direction: row-reverse;
 }
 .product-page .list-product .about-us-row .about-us-content {
   display: flex;
@@ -2669,15 +2730,22 @@ footer .copyright {
   .homepage #expert_craftspeople .expert_craftspeople-content .expert-left .ngau-btn {
     margin-top: auto;
   }
+  .homepage #expert_craftspeople .expert_craftspeople-content .ec-right-img {
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
   .homepage #expert_craftspeople .expert_craftspeople-content .ngau-sub-title {
     margin: 10px 0;
   }
   .homepage #expert_craftspeople .expert_craftspeople-content .expert-left {
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: inherit;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   .homepage #asian_fengshui_decoration .ngau-btn {
     width: 30%;
@@ -2833,6 +2901,9 @@ footer .copyright {
   .ngau-title-row .ngau-subtitle-in-row {
     font-size: 24px;
   }
+  .homepage #exclusive_offer .container-fluid .row {
+    flex-direction: column-reverse;
+  }
   #loose_gemstone .ngau-title-row .ngau-title-row-right {
     gap: 10px;
   }
@@ -2847,16 +2918,14 @@ footer .copyright {
     min-height: auto;
   }
   .homepage #hero .hero-content-left {
-    padding-top: 30px;
+    padding-top: 80px;
+    padding-bottom: 70px;
   }
   .homepage #hero .hero-content-left .sale-percent {
     font-size: 46px;
   }
   .homepage #hero .hero-content-left .header-btn {
     margin-top: 20px;
-  }
-  .homepage #hero .hero-content-left {
-    padding-right: 40px;
   }
   .homepage #hero .hero-content-left .limited {
     font-size: 20px;
@@ -2935,13 +3004,11 @@ footer .copyright {
   .container-fluid {
     max-width: calc(100vw - 10px);
   }
-  .homepage #hero .hero-content-left {
-    padding: 20px 10px 0 10px;
-  }
   .homepage #hero .hero-content-left .header-btn {
     margin-top: 0;
     padding: 8px 26px;
     font-size: 18px;
+    margin-top: 20px;
   }
   .product-page .product-hero {
     padding: 50px 0;
@@ -3027,11 +3094,17 @@ footer .copyright {
   .homepage #jewellery_collection .jewellery-slider-box .next {
     top: 35%;
   }
+  .homepage #hero .hero-content-left {
+    padding-right: 90px;
+  }
   .homepage #hero .hero-content-left .sale-percent {
-    font-size: 30px;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: DegularDisplay-semibold;
+    margin-top: 10px;
   }
   .homepage #exclusive_offer {
-    padding: 30px 0;
+    padding: 0 0 30px 0;
   }
   .homepage #jewellery_collection {
     padding-top: 30px;
@@ -3072,7 +3145,8 @@ footer .copyright {
     align-items: flex-start;
   }
   .product-page .list-product .over-list-product img {
-    bottom: 12%;
+    bottom: 22%;
+    right: 3%;
   }
   .product-page .list-product .over-list-product .breadcrumb {
     font-size: 18px;

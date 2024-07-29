@@ -407,6 +407,16 @@ nav .navbar .links li:hover .js-sub-menu {
     font-size: 16px;
     border: none;
   }
+  nav .navbar .search-box input {
+    padding-left: 14px;
+  }
+  nav .logo .hide-on-mobile {
+    display: flex !important;
+    justify-content: center;
+  }
+  nav .logo .hide-on-mobile img {
+    max-width: 80%;
+  }
   body {
     padding-top: 56px !important;
   }

@@ -350,19 +350,6 @@ nav .navbar .links li:hover .js-sub-menu {
   }
 }
 @media (max-width: 500px) {
-  .navbar .logo .hide-on-mobile {
-    // display: none;
-  }
-  // .search-box {
-  //   width: auto !important; 
-  //   position: relative;
-  //   input {
-  //     display: none;
-  //   }
-  //   i {
-  //     position: relative !important;
-  //   }
-  // }
   .navbar .search-box{
     position: relative;
     width: auto !important;
@@ -416,6 +403,17 @@ nav .navbar .links li:hover .js-sub-menu {
     font-size: 16px;
     border: none;
   }
+  nav .navbar .search-box input {
+    padding-left: 14px;
+  }
+  nav .logo .hide-on-mobile
+  {
+    display: flex !important;
+    justify-content: center;
+    img {
+      max-width: 80%;
+    }
+  } 
   body {
     padding-top: 56px !important;
   }

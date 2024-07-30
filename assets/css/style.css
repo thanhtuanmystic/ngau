@@ -1650,6 +1650,63 @@ body {
   gap: -5px;
   flex-shrink: 0;
 }
+.product-page .list-product .gemstone-stories-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+}
+.product-page .list-product .gemstone-stories-info .topic {
+  color: var(--Neutrals-Base-Black, #0a0a0b);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.product-page .list-product .gemstone-stories-info .post-title {
+  color: var(--Neutrals-Base-Black, #0a0a0b);
+  font-family: DegularDisplay-semibold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.product-page .list-product .gemstone-stories-info .post-des {
+  color: var(--Neutrals-Base-Black, #0a0a0b);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.product-page .list-product .read-more {
+  display: inline-flex;
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 5px;
+  background: var(--Neutrals-Base-Black, #0a0a0b);
+  color: var(--Neutrals-Base-White, #fafafa);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
 .product-page .list-product .product-pagination {
   display: flex;
   align-items: center;
@@ -2573,6 +2630,9 @@ footer .copyright {
   }
   .product-page .product-detail .product-detail-info .product-ingredient {
     margin-bottom: 26px;
+  }
+  .product-page .list-product .read-more {
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 1200px) {
